@@ -95,9 +95,9 @@ namespace ControlOfPracticalClasses
             }
 
             if(radioButtonPrivate.Checked)
-                SqlQuery.CreateChat(checkedListBoxParty.SelectedItem.ToString(), party);
+                SqlQuery.CreateChat(party, "0");
             else
-                SqlQuery.CreateChat(textBoxChatName.Text, party);
+                SqlQuery.CreateChat(party, "1", textBoxChatName.Text);
 
             this.Close();
         }

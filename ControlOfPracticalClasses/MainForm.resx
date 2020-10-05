@@ -160,7 +160,7 @@
     <value>0, 0</value>
   </data>
   <data name="labelSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>317, 51</value>
+    <value>314, 51</value>
   </data>
   <data name="labelSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -208,7 +208,7 @@
     <value>0, 0</value>
   </data>
   <data name="labelGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 51</value>
+    <value>363, 51</value>
   </data>
   <data name="labelGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -244,10 +244,10 @@
     <value>1</value>
   </data>
   <data name="splitContainerSubjectAndGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 51</value>
+    <value>681, 51</value>
   </data>
   <data name="splitContainerSubjectAndGroup.SplitterDistance" type="System.Int32, mscorlib">
-    <value>317</value>
+    <value>314</value>
   </data>
   <data name="splitContainerSubjectAndGroup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -291,6 +291,222 @@
   <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;buttonDeleteSubject.Name" xml:space="preserve">
+    <value>buttonDeleteSubject</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteSubject.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteSubject.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listBoxSubject.Name" xml:space="preserve">
+    <value>listBoxSubject</value>
+  </data>
+  <data name="&gt;&gt;listBoxSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxSubject.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;listBoxSubject.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonAddSubject.Name" xml:space="preserve">
+    <value>buttonAddSubject</value>
+  </data>
+  <data name="&gt;&gt;buttonAddSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAddSubject.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;buttonAddSubject.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 500</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>ContainerSubjectAndGroup.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonDeleteSubject" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listBoxSubject" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonAddSubject" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,70,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Name" xml:space="preserve">
+    <value>ContainerSubjectAndGroup.Panel1</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Parent" xml:space="preserve">
+    <value>ContainerSubjectAndGroup</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteGroup.Name" xml:space="preserve">
+    <value>buttonDeleteGroup</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteGroup.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;buttonDeleteGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;listBoxGroup.Name" xml:space="preserve">
+    <value>listBoxGroup</value>
+  </data>
+  <data name="&gt;&gt;listBoxGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBoxGroup.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;listBoxGroup.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonAddGroup.Name" xml:space="preserve">
+    <value>buttonAddGroup</value>
+  </data>
+  <data name="&gt;&gt;buttonAddGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAddGroup.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;buttonAddGroup.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>364, 500</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>ContainerSubjectAndGroup.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonDeleteGroup" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listBoxGroup" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonAddGroup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,70,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Name" xml:space="preserve">
+    <value>ContainerSubjectAndGroup.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Parent" xml:space="preserve">
+    <value>ContainerSubjectAndGroup</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ContainerSubjectAndGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 500</value>
+  </data>
+  <data name="ContainerSubjectAndGroup.SplitterDistance" type="System.Int32, mscorlib">
+    <value>313</value>
+  </data>
+  <data name="ContainerSubjectAndGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Name" xml:space="preserve">
+    <value>ContainerSubjectAndGroup</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.Parent" xml:space="preserve">
+    <value>ContainerTopAndBottom.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ContainerSubjectAndGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Name" xml:space="preserve">
+    <value>ContainerTopAndBottom.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Parent" xml:space="preserve">
+    <value>ContainerTopAndBottom</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ContainerTopAndBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="ContainerTopAndBottom.SplitterDistance" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="ContainerTopAndBottom.SplitterWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ContainerTopAndBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Name" xml:space="preserve">
+    <value>ContainerTopAndBottom</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.Parent" xml:space="preserve">
+    <value>PanelSubject</value>
+  </data>
+  <data name="&gt;&gt;ContainerTopAndBottom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="buttonDeleteSubject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -310,7 +526,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonDeleteSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 75</value>
+    <value>313, 75</value>
   </data>
   <data name="buttonDeleteSubject.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -346,7 +562,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="listBoxSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 350</value>
+    <value>313, 350</value>
   </data>
   <data name="listBoxSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -382,7 +598,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonAddSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 75</value>
+    <value>313, 75</value>
   </data>
   <data name="buttonAddSubject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -401,51 +617,6 @@
   </data>
   <data name="&gt;&gt;buttonAddSubject.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tableLayoutPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 500</value>
-  </data>
-  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
-    <value>tableLayoutPanel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
-    <value>ContainerSubjectAndGroup.Panel1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonDeleteSubject" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listBoxSubject" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonAddSubject" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,70,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Name" xml:space="preserve">
-    <value>ContainerSubjectAndGroup.Panel1</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.Parent" xml:space="preserve">
-    <value>ContainerSubjectAndGroup</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="buttonDeleteGroup.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -466,7 +637,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonDeleteGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 75</value>
+    <value>364, 75</value>
   </data>
   <data name="buttonDeleteGroup.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -502,7 +673,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="listBoxGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 350</value>
+    <value>364, 350</value>
   </data>
   <data name="listBoxGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -538,7 +709,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonAddGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 75</value>
+    <value>364, 75</value>
   </data>
   <data name="buttonAddGroup.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -558,105 +729,6 @@
   <data name="&gt;&gt;buttonAddGroup.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tableLayoutPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 500</value>
-  </data>
-  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
-    <value>tableLayoutPanel3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
-    <value>ContainerSubjectAndGroup.Panel2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonDeleteGroup" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="listBoxGroup" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonAddGroup" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,70,Percent,15,Percent,15" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Name" xml:space="preserve">
-    <value>ContainerSubjectAndGroup.Panel2</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.Parent" xml:space="preserve">
-    <value>ContainerSubjectAndGroup</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ContainerSubjectAndGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 500</value>
-  </data>
-  <data name="ContainerSubjectAndGroup.SplitterDistance" type="System.Int32, mscorlib">
-    <value>316</value>
-  </data>
-  <data name="ContainerSubjectAndGroup.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Name" xml:space="preserve">
-    <value>ContainerSubjectAndGroup</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.Parent" xml:space="preserve">
-    <value>ContainerTopAndBottom.Panel2</value>
-  </data>
-  <data name="&gt;&gt;ContainerSubjectAndGroup.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Name" xml:space="preserve">
-    <value>ContainerTopAndBottom.Panel2</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.Parent" xml:space="preserve">
-    <value>ContainerTopAndBottom</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ContainerTopAndBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="ContainerTopAndBottom.SplitterDistance" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="ContainerTopAndBottom.SplitterWidth" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="ContainerTopAndBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Name" xml:space="preserve">
-    <value>ContainerTopAndBottom</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.Parent" xml:space="preserve">
-    <value>PanelSubject</value>
-  </data>
-  <data name="&gt;&gt;ContainerTopAndBottom.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="ContainerRightAndLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -668,6 +740,825 @@
   </data>
   <data name="Test.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;button21.Name" xml:space="preserve">
+    <value>button21</value>
+  </data>
+  <data name="&gt;&gt;button21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button21.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;button20.Name" xml:space="preserve">
+    <value>button20</value>
+  </data>
+  <data name="&gt;&gt;button20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button20.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button19.Name" xml:space="preserve">
+    <value>button19</value>
+  </data>
+  <data name="&gt;&gt;button19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button19.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button18.Name" xml:space="preserve">
+    <value>button18</value>
+  </data>
+  <data name="&gt;&gt;button18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button18.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button17.Name" xml:space="preserve">
+    <value>button17</value>
+  </data>
+  <data name="&gt;&gt;button17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button17.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;button16.Name" xml:space="preserve">
+    <value>button16</value>
+  </data>
+  <data name="&gt;&gt;button16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button16.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;button15.Name" xml:space="preserve">
+    <value>button15</value>
+  </data>
+  <data name="&gt;&gt;button15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button15.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button14.Name" xml:space="preserve">
+    <value>button14</value>
+  </data>
+  <data name="&gt;&gt;button14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button14.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Name" xml:space="preserve">
+    <value>dateTimePicker1</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;button13.Name" xml:space="preserve">
+    <value>button13</value>
+  </data>
+  <data name="&gt;&gt;button13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button13.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Name" xml:space="preserve">
+    <value>textBox2</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox2.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;button12.Name" xml:space="preserve">
+    <value>button12</value>
+  </data>
+  <data name="&gt;&gt;button12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button12.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;button11.Name" xml:space="preserve">
+    <value>button11</value>
+  </data>
+  <data name="&gt;&gt;button11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button11.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;button10.Name" xml:space="preserve">
+    <value>button10</value>
+  </data>
+  <data name="&gt;&gt;button10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button10.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;button9.Name" xml:space="preserve">
+    <value>button9</value>
+  </data>
+  <data name="&gt;&gt;button9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button9.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;button8.Name" xml:space="preserve">
+    <value>button8</value>
+  </data>
+  <data name="&gt;&gt;button8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button8.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;button6.Name" xml:space="preserve">
+    <value>button6</value>
+  </data>
+  <data name="&gt;&gt;button6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button6.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;button5.Name" xml:space="preserve">
+    <value>button5</value>
+  </data>
+  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="Test.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Test.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Test.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="Test.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Test.Name" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="&gt;&gt;Test.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Test.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Test.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Name" xml:space="preserve">
+    <value>splitContainerChatsHeader</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Parent" xml:space="preserve">
+    <value>PanelMessagesChats</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelMessagesChats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelMessagesChats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelMessagesChats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelMessagesChats.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PanelMessagesChats.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelMessagesChats.Name" xml:space="preserve">
+    <value>PanelMessagesChats</value>
+  </data>
+  <data name="&gt;&gt;PanelMessagesChats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelMessagesChats.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelMessagesChats.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PanelMessages.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Name" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Parent" xml:space="preserve">
+    <value>PanelMessages</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelChats.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonTxtChat" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRX" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelChatBottom" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="PanelMessages.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelMessages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelMessages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelMessages.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PanelMessages.Name" xml:space="preserve">
+    <value>PanelMessages</value>
+  </data>
+  <data name="&gt;&gt;PanelMessages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelMessages.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelMessages.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Name" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Parent" xml:space="preserve">
+    <value>PanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataAttendance" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtAttendance" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelAttendanceBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxDateAttendance" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="PanelAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelAttendance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PanelAttendance.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelAttendance.Name" xml:space="preserve">
+    <value>PanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;PanelAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelAttendance.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelAttendance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Name" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Parent" xml:space="preserve">
+    <value>PanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelProgress.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataProgress" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelProgressBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxStageSubject" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="PanelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PanelProgress.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelProgress.Name" xml:space="preserve">
+    <value>PanelProgress</value>
+  </data>
+  <data name="&gt;&gt;PanelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelProgress.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelProgress.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="PanelSubject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelSubject.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelSubject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelSubject.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PanelSubject.Name" xml:space="preserve">
+    <value>PanelSubject</value>
+  </data>
+  <data name="&gt;&gt;PanelSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelSubject.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelSubject.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>PanelSettings</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="PanelSettings.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelSettings.Name" xml:space="preserve">
+    <value>PanelSettings</value>
+  </data>
+  <data name="&gt;&gt;PanelSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelSettings.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelSettings.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>PanelSchedule</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelSchedule.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelSchedule.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelSchedule.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelSchedule.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="PanelSchedule.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelSchedule.Name" xml:space="preserve">
+    <value>PanelSchedule</value>
+  </data>
+  <data name="&gt;&gt;PanelSchedule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelSchedule.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelSchedule.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>PanelDiscussions</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelDiscussions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelDiscussions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelDiscussions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelDiscussions.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="PanelDiscussions.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelDiscussions.Name" xml:space="preserve">
+    <value>PanelDiscussions</value>
+  </data>
+  <data name="&gt;&gt;PanelDiscussions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelDiscussions.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelDiscussions.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>PanelScienceContent</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PanelScienceContent.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="PanelScienceContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PanelScienceContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="PanelScienceContent.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="PanelScienceContent.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;PanelScienceContent.Name" xml:space="preserve">
+    <value>PanelScienceContent</value>
+  </data>
+  <data name="&gt;&gt;PanelScienceContent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PanelScienceContent.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;PanelScienceContent.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Name" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel1</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TablePanelRightButton.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TablePanelRightButton.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonAttendance.Name" xml:space="preserve">
+    <value>ButtonAttendance</value>
+  </data>
+  <data name="&gt;&gt;ButtonAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonAttendance.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonAttendance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonProgress.Name" xml:space="preserve">
+    <value>ButtonProgress</value>
+  </data>
+  <data name="&gt;&gt;ButtonProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonProgress.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonProgress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonSettings.Name" xml:space="preserve">
+    <value>ButtonSettings</value>
+  </data>
+  <data name="&gt;&gt;ButtonSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSettings.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonSettings.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchedule.Name" xml:space="preserve">
+    <value>ButtonSchedule</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchedule.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchedule.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonSchedule.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ButtonScienceContent.Name" xml:space="preserve">
+    <value>ButtonScienceContent</value>
+  </data>
+  <data name="&gt;&gt;ButtonScienceContent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonScienceContent.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonScienceContent.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ButtonDiscussions.Name" xml:space="preserve">
+    <value>ButtonDiscussions</value>
+  </data>
+  <data name="&gt;&gt;ButtonDiscussions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonDiscussions.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonDiscussions.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ButtonMessages.Name" xml:space="preserve">
+    <value>ButtonMessages</value>
+  </data>
+  <data name="&gt;&gt;ButtonMessages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonMessages.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonMessages.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ButtonSubject.Name" xml:space="preserve">
+    <value>ButtonSubject</value>
+  </data>
+  <data name="&gt;&gt;ButtonSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSubject.Parent" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;ButtonSubject.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TablePanelRightButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="TablePanelRightButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="TablePanelRightButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TablePanelRightButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="TablePanelRightButton.RowCount" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="TablePanelRightButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 561</value>
+  </data>
+  <data name="TablePanelRightButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TablePanelRightButton.Name" xml:space="preserve">
+    <value>TablePanelRightButton</value>
+  </data>
+  <data name="&gt;&gt;TablePanelRightButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TablePanelRightButton.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel2</value>
+  </data>
+  <data name="&gt;&gt;TablePanelRightButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TablePanelRightButton.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonAttendance" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonProgress" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSettings" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSchedule" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonScienceContent" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonDiscussions" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonMessages" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSubject" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Name" xml:space="preserve">
+    <value>ContainerRightAndLeft.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Parent" xml:space="preserve">
+    <value>ContainerRightAndLeft</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ContainerRightAndLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>884, 561</value>
+  </data>
+  <data name="ContainerRightAndLeft.SplitterDistance" type="System.Int32, mscorlib">
+    <value>681</value>
+  </data>
+  <data name="ContainerRightAndLeft.SplitterWidth" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="ContainerRightAndLeft.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Name" xml:space="preserve">
+    <value>ContainerRightAndLeft</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ContainerRightAndLeft.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="button20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -694,7 +1585,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button20.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 387</value>
@@ -718,7 +1609,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="button19.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 339</value>
@@ -742,7 +1633,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button19.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button18.Location" type="System.Drawing.Point, System.Drawing">
     <value>125, 339</value>
@@ -766,7 +1657,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button18.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="button17.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 339</value>
@@ -790,7 +1681,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button17.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="button16.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 283</value>
@@ -814,7 +1705,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button16.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="button15.Location" type="System.Drawing.Point, System.Drawing">
     <value>227, 250</value>
@@ -838,7 +1729,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button15.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="button14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -865,7 +1756,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button14.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="dateTimePicker1.CustomFormat" xml:space="preserve">
     <value />
@@ -889,7 +1780,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="button13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -916,7 +1807,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button13.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>410, 289</value>
@@ -943,7 +1834,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;textBox2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="button12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -970,7 +1861,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button12.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="button11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -997,7 +1888,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button11.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="button10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1024,7 +1915,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button10.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="button9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1051,7 +1942,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button9.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="button8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1078,7 +1969,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="button6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1105,7 +1996,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button6.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1132,7 +2023,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1159,7 +2050,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1186,7 +2077,7 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>36, 104</value>
@@ -1207,37 +2098,79 @@
     <value>Test</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="Test.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Test.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Test.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="Test.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Test.Name" xml:space="preserve">
-    <value>Test</value>
-  </data>
-  <data name="&gt;&gt;Test.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Test.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;Test.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PanelMessages.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+    <value>21</value>
   </data>
   <data name="tableLayoutPanelChats.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtChat.Name" xml:space="preserve">
+    <value>buttonTxtChat</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtChat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtChat.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtChat.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxRX.Name" xml:space="preserve">
+    <value>textBoxRX</value>
+  </data>
+  <data name="&gt;&gt;textBoxRX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRX.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;textBoxRX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelChatBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxTXMessage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonSend" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,73,24561,Percent,26,75439" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanelChats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelChats.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelChats.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelChats.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="tableLayoutPanelChats.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Name" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.Parent" xml:space="preserve">
+    <value>PanelMessages</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChats.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelChats.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonTxtChat" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRX" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelChatBottom" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="buttonTxtChat.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -1261,7 +2194,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtChat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 44</value>
+    <value>675, 44</value>
   </data>
   <data name="buttonTxtChat.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1291,7 +2224,7 @@
     <value>True</value>
   </data>
   <data name="textBoxRX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 405</value>
+    <value>675, 405</value>
   </data>
   <data name="textBoxRX.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1311,6 +2244,60 @@
   <data name="tableLayoutPanelChatBottom.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;textBoxTXMessage.Name" xml:space="preserve">
+    <value>textBoxTXMessage</value>
+  </data>
+  <data name="&gt;&gt;textBoxTXMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTXMessage.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChatBottom</value>
+  </data>
+  <data name="&gt;&gt;textBoxTXMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonSend.Name" xml:space="preserve">
+    <value>buttonSend</value>
+  </data>
+  <data name="&gt;&gt;buttonSend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonSend.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChatBottom</value>
+  </data>
+  <data name="&gt;&gt;buttonSend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 464</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 94</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelChatBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelChats</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelChatBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelChatBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxTXMessage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonSend" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,73,24561,Percent,26,75439" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="textBoxTXMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1321,7 +2308,7 @@
     <value>True</value>
   </data>
   <data name="textBoxTXMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 88</value>
+    <value>488, 88</value>
   </data>
   <data name="textBoxTXMessage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1348,10 +2335,10 @@
     <value>NoControl</value>
   </data>
   <data name="buttonSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 3</value>
+    <value>497, 3</value>
   </data>
   <data name="buttonSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 88</value>
+    <value>175, 88</value>
   </data>
   <data name="buttonSend.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1371,90 +2358,6 @@
   <data name="&gt;&gt;buttonSend.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tableLayoutPanelChatBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelChatBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 464</value>
-  </data>
-  <data name="tableLayoutPanelChatBottom.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelChatBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 94</value>
-  </data>
-  <data name="tableLayoutPanelChatBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChatBottom.Name" xml:space="preserve">
-    <value>tableLayoutPanelChatBottom</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChatBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChatBottom.Parent" xml:space="preserve">
-    <value>tableLayoutPanelChats</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChatBottom.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelChatBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxTXMessage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonSend" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,73,24561,Percent,26,75439" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="tableLayoutPanelChats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelChats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelChats.RowCount" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tableLayoutPanelChats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="tableLayoutPanelChats.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChats.Name" xml:space="preserve">
-    <value>tableLayoutPanelChats</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChats.Parent" xml:space="preserve">
-    <value>PanelMessages</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelChats.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelChats.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="buttonTxtChat" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxRX" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelChatBottom" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="PanelMessages.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelMessages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelMessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelMessages.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PanelMessages.Name" xml:space="preserve">
-    <value>PanelMessages</value>
-  </data>
-  <data name="&gt;&gt;PanelMessages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelMessages.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelMessages.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="splitContainerChatsHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1463,6 +2366,114 @@
   </data>
   <data name="splitContainerChatsHeader.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelChatHeader</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelMessage.Name" xml:space="preserve">
+    <value>labelMessage</value>
+  </data>
+  <data name="&gt;&gt;labelMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelMessage.Parent" xml:space="preserve">
+    <value>panelChatHeader</value>
+  </data>
+  <data name="&gt;&gt;labelMessage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;buttonAddChat.Name" xml:space="preserve">
+    <value>buttonAddChat</value>
+  </data>
+  <data name="&gt;&gt;buttonAddChat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAddChat.Parent" xml:space="preserve">
+    <value>panelChatHeader</value>
+  </data>
+  <data name="&gt;&gt;buttonAddChat.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelChatHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="panelChatHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelChatHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panelChatHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 58</value>
+  </data>
+  <data name="panelChatHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelChatHeader.Name" xml:space="preserve">
+    <value>panelChatHeader</value>
+  </data>
+  <data name="&gt;&gt;panelChatHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelChatHeader.Parent" xml:space="preserve">
+    <value>splitContainerChatsHeader.Panel1</value>
+  </data>
+  <data name="&gt;&gt;panelChatHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Name" xml:space="preserve">
+    <value>splitContainerChatsHeader.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Parent" xml:space="preserve">
+    <value>splitContainerChatsHeader</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Name" xml:space="preserve">
+    <value>splitContainerChatsHeader.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Parent" xml:space="preserve">
+    <value>splitContainerChatsHeader</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainerChatsHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="splitContainerChatsHeader.SplitterDistance" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="splitContainerChatsHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Name" xml:space="preserve">
+    <value>splitContainerChatsHeader</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.Parent" xml:space="preserve">
+    <value>PanelMessagesChats</value>
+  </data>
+  <data name="&gt;&gt;splitContainerChatsHeader.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1577,7 +2588,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonAddChat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 9</value>
+    <value>621, 9</value>
   </data>
   <data name="buttonAddChat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 10, 3</value>
@@ -1600,107 +2611,89 @@
   <data name="&gt;&gt;buttonAddChat.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panelChatHeader.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="panelChatHeader.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panelChatHeader.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="panelChatHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 58</value>
-  </data>
-  <data name="panelChatHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelChatHeader.Name" xml:space="preserve">
-    <value>panelChatHeader</value>
-  </data>
-  <data name="&gt;&gt;panelChatHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelChatHeader.Parent" xml:space="preserve">
-    <value>splitContainerChatsHeader.Panel1</value>
-  </data>
-  <data name="&gt;&gt;panelChatHeader.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Name" xml:space="preserve">
-    <value>splitContainerChatsHeader.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.Parent" xml:space="preserve">
-    <value>splitContainerChatsHeader</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Name" xml:space="preserve">
-    <value>splitContainerChatsHeader.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.Parent" xml:space="preserve">
-    <value>splitContainerChatsHeader</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainerChatsHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="splitContainerChatsHeader.SplitterDistance" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="splitContainerChatsHeader.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Name" xml:space="preserve">
-    <value>splitContainerChatsHeader</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.Parent" xml:space="preserve">
-    <value>PanelMessagesChats</value>
-  </data>
-  <data name="&gt;&gt;splitContainerChatsHeader.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PanelMessagesChats.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelMessagesChats.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelMessagesChats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelMessagesChats.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="PanelMessagesChats.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelMessagesChats.Name" xml:space="preserve">
-    <value>PanelMessagesChats</value>
-  </data>
-  <data name="&gt;&gt;PanelMessagesChats.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelMessagesChats.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelMessagesChats.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="tableLayoutPanelAttendance.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;DataAttendance.Name" xml:space="preserve">
+    <value>DataAttendance</value>
+  </data>
+  <data name="&gt;&gt;DataAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataAttendance.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;DataAttendance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtAttendance.Name" xml:space="preserve">
+    <value>buttonTxtAttendance</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtAttendance.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtAttendance.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelAttendanceBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonDeleteColumn" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSaveData" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDateAttendance.Name" xml:space="preserve">
+    <value>comboBoxDateAttendance</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDateAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDateAttendance.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDateAttendance.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Name" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.Parent" xml:space="preserve">
+    <value>PanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendance.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelAttendance.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataAttendance" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtAttendance" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelAttendanceBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxDateAttendance" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="DataAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1712,7 +2705,7 @@
     <value>3, 10, 3, 5</value>
   </data>
   <data name="DataAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 365</value>
+    <value>675, 365</value>
   </data>
   <data name="DataAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1751,7 +2744,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 44</value>
+    <value>675, 44</value>
   </data>
   <data name="buttonTxtAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1774,6 +2767,72 @@
   <data name="tableLayoutPanelAttendanceBottom.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;ButtonDeleteColumn.Name" xml:space="preserve">
+    <value>ButtonDeleteColumn</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumn.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendanceBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumn.Name" xml:space="preserve">
+    <value>ButtonAddColumn</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumn.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendanceBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveData.Name" xml:space="preserve">
+    <value>ButtonSaveData</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveData.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendanceBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveData.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 464</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 94</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelAttendanceBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelAttendance</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelAttendanceBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonDeleteColumn" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSaveData" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="ButtonDeleteColumn.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1784,13 +2843,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonDeleteColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 0</value>
+    <value>450, 0</value>
   </data>
   <data name="ButtonDeleteColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDeleteColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonDeleteColumn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1820,13 +2879,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonAddColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 0</value>
+    <value>225, 0</value>
   </data>
   <data name="ButtonAddColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAddColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonAddColumn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1862,7 +2921,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSaveData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonSaveData.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1882,36 +2941,6 @@
   </data>
   <data name="&gt;&gt;ButtonSaveData.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 464</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 94</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Name" xml:space="preserve">
-    <value>tableLayoutPanelAttendanceBottom</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.Parent" xml:space="preserve">
-    <value>tableLayoutPanelAttendance</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendanceBottom.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelAttendanceBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonDeleteColumn" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumn" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSaveData" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="comboBoxDateAttendance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1940,65 +2969,89 @@
   <data name="&gt;&gt;comboBoxDateAttendance.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="tableLayoutPanelAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelAttendance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelAttendance.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="tableLayoutPanelAttendance.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendance.Name" xml:space="preserve">
-    <value>tableLayoutPanelAttendance</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendance.Parent" xml:space="preserve">
-    <value>PanelAttendance</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelAttendance.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelAttendance.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataAttendance" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtAttendance" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelAttendanceBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxDateAttendance" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="PanelAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelAttendance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelAttendance.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="PanelAttendance.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelAttendance.Name" xml:space="preserve">
-    <value>PanelAttendance</value>
-  </data>
-  <data name="&gt;&gt;PanelAttendance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelAttendance.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelAttendance.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="tableLayoutPanelProgress.ColumnCount" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;DataProgress.Name" xml:space="preserve">
+    <value>DataProgress</value>
+  </data>
+  <data name="&gt;&gt;DataProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataProgress.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;DataProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtProgress.Name" xml:space="preserve">
+    <value>buttonTxtProgress</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtProgress.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;buttonTxtProgress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelProgressBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonSaveDataProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonDeleteColumnProgress" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumnProgress" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;comboBoxStageSubject.Name" xml:space="preserve">
+    <value>comboBoxStageSubject</value>
+  </data>
+  <data name="&gt;&gt;comboBoxStageSubject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxStageSubject.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;comboBoxStageSubject.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tableLayoutPanelProgress.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 561</value>
+  </data>
+  <data name="tableLayoutPanelProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Name" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.Parent" xml:space="preserve">
+    <value>PanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelProgress.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataProgress" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelProgressBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxStageSubject" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="DataProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2010,7 +3063,7 @@
     <value>3, 10, 3, 5</value>
   </data>
   <data name="DataProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 365</value>
+    <value>675, 365</value>
   </data>
   <data name="DataProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2049,7 +3102,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 44</value>
+    <value>675, 44</value>
   </data>
   <data name="buttonTxtProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2072,6 +3125,75 @@
   <data name="tableLayoutPanelProgressBottom.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;ButtonSaveDataProgress.Name" xml:space="preserve">
+    <value>ButtonSaveDataProgress</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveDataProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveDataProgress.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgressBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonSaveDataProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumnProgress.Name" xml:space="preserve">
+    <value>ButtonDeleteColumnProgress</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumnProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumnProgress.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgressBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonDeleteColumnProgress.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumnProgress.Name" xml:space="preserve">
+    <value>ButtonAddColumnProgress</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumnProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumnProgress.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgressBottom</value>
+  </data>
+  <data name="&gt;&gt;ButtonAddColumnProgress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 464</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>675, 94</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Name" xml:space="preserve">
+    <value>tableLayoutPanelProgressBottom</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Parent" xml:space="preserve">
+    <value>tableLayoutPanelProgress</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelProgressBottom.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanelProgressBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonSaveDataProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonDeleteColumnProgress" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumnProgress" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
   <data name="ButtonSaveDataProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2088,7 +3210,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSaveDataProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonSaveDataProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2119,13 +3241,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 0</value>
+    <value>450, 0</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonDeleteColumnProgress.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2155,13 +3277,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonAddColumnProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 0</value>
+    <value>225, 0</value>
   </data>
   <data name="ButtonAddColumnProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAddColumnProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 94</value>
+    <value>225, 94</value>
   </data>
   <data name="ButtonAddColumnProgress.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2180,39 +3302,6 @@
   </data>
   <data name="&gt;&gt;ButtonAddColumnProgress.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 464</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.RowCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 94</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Name" xml:space="preserve">
-    <value>tableLayoutPanelProgressBottom</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgressBottom.Parent" xml:space="preserve">
-    <value>tableLayoutPanelProgress</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgressBottom.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tableLayoutPanelProgressBottom.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonSaveDataProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonDeleteColumnProgress" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ButtonAddColumnProgress" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,33,33333,Percent,33,33333,Percent,33,33333" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="comboBoxStageSubject.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2240,87 +3329,6 @@
   </data>
   <data name="&gt;&gt;comboBoxStageSubject.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="tableLayoutPanelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tableLayoutPanelProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tableLayoutPanelProgress.RowCount" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="tableLayoutPanelProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="tableLayoutPanelProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgress.Name" xml:space="preserve">
-    <value>tableLayoutPanelProgress</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgress.Parent" xml:space="preserve">
-    <value>PanelProgress</value>
-  </data>
-  <data name="&gt;&gt;tableLayoutPanelProgress.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tableLayoutPanelProgress.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="DataProgress" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="buttonTxtProgress" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanelProgressBottom" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="comboBoxStageSubject" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,50,Absolute,31,Percent,100,Absolute,100,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="PanelProgress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelProgress.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="PanelProgress.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelProgress.Name" xml:space="preserve">
-    <value>PanelProgress</value>
-  </data>
-  <data name="&gt;&gt;PanelProgress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelProgress.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelProgress.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="PanelSubject.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelSubject.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelSubject.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;PanelSubject.Name" xml:space="preserve">
-    <value>PanelSubject</value>
-  </data>
-  <data name="&gt;&gt;PanelSubject.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelSubject.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelSubject.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2392,7 +3400,7 @@
     <value>0, 0</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 381</value>
+    <value>681, 381</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2424,21 +3432,6 @@
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="textBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="textBox4.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 112</value>
-  </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
   </data>
@@ -2451,24 +3444,6 @@
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>417, 3</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 112</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Отправить запрос</value>
-  </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
   </data>
@@ -2480,24 +3455,6 @@
   </data>
   <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="button7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 3</value>
-  </data>
-  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 112</value>
-  </data>
-  <data name="button7.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button7.Text" xml:space="preserve">
-    <value>TestPanel</value>
   </data>
   <data name="&gt;&gt;button7.Name" xml:space="preserve">
     <value>button7</value>
@@ -2521,7 +3478,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 118</value>
+    <value>681, 118</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2539,7 +3496,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,78,70968,Percent,21,29032,Absolute,160" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,78,70968,Percent,21,29032,Absolute,161" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
     <value>splitContainer2.Panel2</value>
@@ -2554,7 +3511,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 503</value>
+    <value>681, 503</value>
   </data>
   <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
     <value>381</value>
@@ -2587,7 +3544,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
+    <value>681, 561</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>54</value>
@@ -2607,32 +3564,92 @@
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="PanelSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="textBox4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="PanelSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
-  <data name="PanelSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
+  <data name="textBox4.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="PanelSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 112</value>
   </data>
-  <data name="PanelSettings.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;PanelSettings.Name" xml:space="preserve">
-    <value>PanelSettings</value>
+  <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
+    <value>textBox4</value>
   </data>
-  <data name="&gt;&gt;PanelSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PanelSettings.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
+  <data name="&gt;&gt;textBox4.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
   </data>
-  <data name="&gt;&gt;PanelSettings.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>412, 3</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 112</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Отправить запрос</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="button7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 3</value>
+  </data>
+  <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 112</value>
+  </data>
+  <data name="button7.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button7.Text" xml:space="preserve">
+    <value>TestPanel</value>
+  </data>
+  <data name="&gt;&gt;button7.Name" xml:space="preserve">
+    <value>button7</value>
+  </data>
+  <data name="&gt;&gt;button7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button7.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;button7.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2667,33 +3684,6 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="PanelSchedule.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelSchedule.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelSchedule.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelSchedule.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="PanelSchedule.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelSchedule.Name" xml:space="preserve">
-    <value>PanelSchedule</value>
-  </data>
-  <data name="&gt;&gt;PanelSchedule.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelSchedule.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelSchedule.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2726,33 +3716,6 @@
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="PanelDiscussions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelDiscussions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelDiscussions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelDiscussions.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="PanelDiscussions.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelDiscussions.Name" xml:space="preserve">
-    <value>PanelDiscussions</value>
-  </data>
-  <data name="&gt;&gt;PanelDiscussions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelDiscussions.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelDiscussions.ZOrder" xml:space="preserve">
-    <value>8</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2787,51 +3750,6 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="PanelScienceContent.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="PanelScienceContent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="PanelScienceContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>687, 561</value>
-  </data>
-  <data name="PanelScienceContent.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="PanelScienceContent.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;PanelScienceContent.Name" xml:space="preserve">
-    <value>PanelScienceContent</value>
-  </data>
-  <data name="&gt;&gt;PanelScienceContent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PanelScienceContent.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;PanelScienceContent.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Name" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel1</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TablePanelRightButton.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TablePanelRightButton.ColumnCount" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
   <data name="ButtonAttendance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -2848,7 +3766,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2884,7 +3802,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonProgress.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2920,7 +3838,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 65</value>
+    <value>193, 65</value>
   </data>
   <data name="ButtonSettings.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2956,7 +3874,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSchedule.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonSchedule.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2992,7 +3910,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonScienceContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonScienceContent.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3028,7 +3946,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDiscussions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonDiscussions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3064,7 +3982,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonMessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonMessages.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3100,7 +4018,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 62</value>
+    <value>193, 62</value>
   </data>
   <data name="ButtonSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3120,76 +4038,31 @@
   <data name="&gt;&gt;ButtonSubject.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="TablePanelRightButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="button21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="TablePanelRightButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
+  <data name="button21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 388</value>
   </data>
-  <data name="TablePanelRightButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="button21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="TablePanelRightButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="button21.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="TablePanelRightButton.RowCount" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="button21.Text" xml:space="preserve">
+    <value>GetName</value>
   </data>
-  <data name="TablePanelRightButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 561</value>
+  <data name="&gt;&gt;button21.Name" xml:space="preserve">
+    <value>button21</value>
   </data>
-  <data name="TablePanelRightButton.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;button21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TablePanelRightButton.Name" xml:space="preserve">
-    <value>TablePanelRightButton</value>
+  <data name="&gt;&gt;button21.Parent" xml:space="preserve">
+    <value>Test</value>
   </data>
-  <data name="&gt;&gt;TablePanelRightButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TablePanelRightButton.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel2</value>
-  </data>
-  <data name="&gt;&gt;TablePanelRightButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TablePanelRightButton.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ButtonAttendance" Row="5" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonProgress" Row="4" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSettings" Row="8" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSchedule" Row="7" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonScienceContent" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonDiscussions" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonMessages" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ButtonSubject" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111,Percent,11,11111" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Name" xml:space="preserve">
-    <value>ContainerRightAndLeft.Panel2</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.Parent" xml:space="preserve">
-    <value>ContainerRightAndLeft</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ContainerRightAndLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>884, 561</value>
-  </data>
-  <data name="ContainerRightAndLeft.SplitterDistance" type="System.Int32, mscorlib">
-    <value>687</value>
-  </data>
-  <data name="ContainerRightAndLeft.SplitterWidth" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="ContainerRightAndLeft.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Name" xml:space="preserve">
-    <value>ContainerRightAndLeft</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ContainerRightAndLeft.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;button21.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -279,27 +279,36 @@ namespace ControlOfPracticalClasses
         #region //чат
 
         //получение чатов в которых участвует пользователь
-        public static DataTable ListChatWithMe { get { return SqlConnect.Query("SELECT party.chat_id, chat_name FROM party, chat where (party.chat_id = chat.chat_id) and (party.IDUser = '" + IDUser + "');"); } }
+        public static DataTable ListChatWithMe { get { return SqlConnect.Query("SELECT party.chat_id, chat_name, many FROM party, chat where (party.chat_id = chat.chat_id) and (party.IDUser = '" + IDUser + "');"); } }
 
-        //Получение id чата
-        public static string GetIdChat(string chatName)
+        //Получение id чата который тока что был создан
+        public static string GetIdChat()
         {
-            chatName = MyFunction.FixSpace(chatName);
+            //chatName = MyFunction.FixSpace(chatName);
 
-            DataTable table = SqlConnect.Query("SELECT chat_id FROM chat where (chat_name = '" + chatName + "') and (creator_id = '" + IDUser + "');");
+            DataTable table = SqlConnect.Query("SELECT chat_id FROM chat where (creator_id = '" + IDUser + "') ORDER BY chat_id DESC LIMIT 1;");
+
+            if (table.Rows.Count != 0) return table.Rows[0].ItemArray[0].ToString();
+            return "-1";
+        }
+
+        //Получение id последне отправленного сообщения
+        public static string GetIdLastMessage()
+        {
+            DataTable table = SqlConnect.Query("SELECT message_id FROM message WHERE (chat_id = " + IDChat + " AND send_IDUser = " + IDUser + ") ORDER BY message_id DESC LIMIT 1;");
 
             if (table.Rows.Count != 0) return table.Rows[0].ItemArray[0].ToString();
             return "-1";
         }
 
         //Создание чата
-        public static void CreateChat(string chatName, List<string> party)
+        public static void CreateChat(List<string> party, string type, string chatName = "")
         {
             chatName = MyFunction.FixSpace(chatName);
 
-            SqlConnect.Query("INSERT INTO chat (chat_name, creator_id) VALUES('" + chatName + "', '" + IDUser + "');");
+            SqlConnect.Query("INSERT INTO chat (chat_name, creator_id, many) VALUES('" + chatName + "', '" + IDUser + "', '" + type + "');");
 
-            string idChat = GetIdChat(chatName);
+            string idChat = GetIdChat();
 
             SqlConnect.Query(" INSERT INTO party (chat_id, IDUser) VALUES('" + idChat + "', '" + IDUser + "');");
 
@@ -313,7 +322,30 @@ namespace ControlOfPracticalClasses
         public static void SendMessage(string mes, string date)
         {
             SqlConnect.Query("INSERT INTO message (content, date_create,chat_id, send_IDUser) VALUES ('" + mes + "','" + date + "','" + IDChat + "','" + IDUser + "');");
+
+            string messageId = GetIdLastMessage();
+
+            if (messageId != "-1")
+            {
+                SqlConnect.Query("INSERT INTO message_status (message_id, is_read) VALUES ('" + messageId + "', '0');");
+            }
         }
+                
+        //Получение полной переписки
+        public static DataTable GetFullMessageChat()
+        {
+           return SqlConnect.Query("SELECT message_id, content, FIO, date_create FROM tcopc.message, accounts WHERE chat_id = " + IDChat + " and send_IDUser = IDUser ORDER BY message_id;");
+        }
+
+        //Получение названия личной переписки
+        public static string GetNameChat(string idChat)
+        {
+            DataTable table = SqlConnect.Query("SELECT FIO FROM party, accounts where (chat_id = '" + idChat + "') and (accounts.IDUser = party.IDUser) and (accounts.IDUser != '" + IDUser + "');");
+
+            if (table.Rows.Count != 0) return table.Rows[0].ItemArray[0].ToString();
+            return "-1";
+        }
+
 
         #endregion
 

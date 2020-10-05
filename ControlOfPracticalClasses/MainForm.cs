@@ -37,14 +37,19 @@ namespace ControlOfPracticalClasses
 
         List<string> idChat = new List<string>();
 
-        public MainForm(string idUser)
+        public MainForm(string idUser, string idGroup = "-1")
         {
             InitializeComponent();
             MyInitialize();
             this.Show();
             First();
-            SqlConnect.Connect();
+            //SqlConnect.Connect();
             SqlQuery.IDUser = idUser;
+
+            if (idGroup != "-1")
+            {
+                SqlQuery.IDGroup = idGroup;
+            }
         }
 
         //
@@ -291,14 +296,23 @@ namespace ControlOfPracticalClasses
         //Сообщения
         private void ButtonMessages_Click(object sender, EventArgs e)
         {
-            DisplayNon();            
+            DisplayNon();
+
+            //очищаем список чатов
+            tableLayoutPanelListChats.Controls.Clear();
+
+            //очищаем id чатов
+            idChat.Clear();
 
             DataTable table = SqlQuery.ListChatWithMe;//получение чатов в которых я участвую
 
+            //добовление кнопок чатов 
             for (int i = 0; i < table.Rows.Count; i++)
             {
+                //Флаг для добавления
                 bool f = true;
 
+                //Создание кнопки для добовления
                 Button btn = new Button();
                 btn.FlatStyle = FlatStyle.Flat;
                 btn.FlatAppearance.BorderSize = 0;
@@ -309,13 +323,24 @@ namespace ControlOfPracticalClasses
                 btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
                 btn.Click += EnterChat;
 
-                btn.Text = table.Rows[i].ItemArray[1].ToString();
+                //название чата
+                if (table.Rows[i].ItemArray[2].ToString() == "0")
+                {
+                    btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
+                }
+                else
+                {
+                    btn.Text = table.Rows[i].ItemArray[1].ToString();
+                }
+                
 
+                //Проверка на существование такого чата
                 for (int j = 0; j < tableLayoutPanelListChats.Controls.Count; j++)
                 {
-                    if (tableLayoutPanelListChats.Controls[j].Text == table.Rows[i].ItemArray[1].ToString()) f = !f;
+                    if (tableLayoutPanelListChats.Controls[j].Text == btn.Text) f = false;
                 }
 
+                //Добаление чата
                 if (f)
                 {
                     tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
@@ -608,18 +633,60 @@ namespace ControlOfPracticalClasses
         private void EnterChat(object sender, EventArgs e)
         {
             //buttonTxtChat.Text = tableLayoutPanelListChats.Controls[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)].Text + " " + tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender).ToString();
+
+            //Заголовок чата
             buttonTxtChat.Text = tableLayoutPanelListChats.Controls[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)].Text;
 
+            //Установка id выбранного чата
             SqlQuery.IDChat = idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)];
 
+            //Помещаем индекс выбранного чата на 1 место
             string c = idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)];
             idChat.Remove(idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)]);
             idChat.Insert(0, c);
 
+            //Помещаем выбранный чат на 1 место
             tableLayoutPanelListChats.Controls.SetChildIndex((Button)sender, 0);
+
+            //Очищаем текст бокс для отправки от написанных сообщений 
+            textBoxTXMessage.Text = "";
+
+            //Очищаем текст бокс для приема от сообщений 
+            textBoxRX.Text = "";
 
             DisplayNon();
             PanelMessages.Visible = true;
+
+            //получение всей переписки
+            DataTable tableMessages = SqlQuery.GetFullMessageChat();
+
+            //Дата последнего сообщения
+            string lastDateMessage = "";
+
+            //Сохроняем и Записыывем первую дату сообщений 
+            if (tableMessages.Rows.Count > 0)
+            {
+                lastDateMessage = ((DateTime)tableMessages.Rows[0].ItemArray[3]).ToShortDateString();
+                textBoxRX.Text = lastDateMessage + ":\r\n\r\n";
+            }
+
+            //Записывем все сообщения в текст бокс
+            for (int i = 0; i < tableMessages.Rows.Count; i++)
+            {
+                //Получаем дату текущего сообщения
+                string activeDate = ((DateTime)tableMessages.Rows[i].ItemArray[3]).ToShortDateString();
+
+                //Если новая дата то выводим ее
+                if (activeDate != lastDateMessage)
+                {
+                    lastDateMessage = activeDate;
+                    textBoxRX.Text += "\r\n\r\n" + lastDateMessage + ":\r\n\r\n";
+                }
+
+                //Выводим сообщения
+                textBoxRX.Text += MyFunction.GetNameFromFIO(tableMessages.Rows[i].ItemArray[2].ToString()) + ": " + tableMessages.Rows[i].ItemArray[1].ToString() + "\r\n";
+            }            
+
         }
 
         //вызов формы для создания чата
@@ -637,8 +704,13 @@ namespace ControlOfPracticalClasses
             //Отправить сообщение
             private void buttonSend_Click_1(object sender, EventArgs e)
             {
-                SqlQuery.SendMessage(textBoxTXMessage.Text, MyFunction.FlipWord(DateTime.Today.ToShortDateString()));
+                //Отправка сообщение 
+                SqlQuery.SendMessage(textBoxTXMessage.Text, MyFunction.FlipShortDate(DateTime.Today.ToShortDateString()));
+
+                //Очистка поля для ввода сообщения
+                textBoxTXMessage.Text = "";
             }
+
         #endregion
         //
 
@@ -750,8 +822,6 @@ namespace ControlOfPracticalClasses
             }
         }
 
-        #endregion
-
         private void button16_Click(object sender, EventArgs e)
         {
             FormAddChat formAddChat = new FormAddChat();
@@ -764,6 +834,7 @@ namespace ControlOfPracticalClasses
             {
                 textBox2.Text += idChat[i] + "\r\n";
             }
+            textBox1.Text = idChat.Count.ToString();
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -771,7 +842,7 @@ namespace ControlOfPracticalClasses
             string c = idChat[idChat.Count - 1];
             idChat.Remove(idChat[idChat.Count - 1]);
             idChat.Insert(0, c);
-            
+
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -797,7 +868,16 @@ namespace ControlOfPracticalClasses
 
         private void button20_Click(object sender, EventArgs e)
         {
-            textBox1.Text = MyFunction.FlipWord(DateTime.Today.ToShortDateString());
+            textBox1.Text = MyFunction.FlipShortDate(DateTime.Today.ToShortDateString());
+        }
+
+
+
+        #endregion
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = MyFunction.GetNameFromFIO(textBox2.Text);
         }
     }
 }

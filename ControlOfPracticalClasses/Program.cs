@@ -18,10 +18,11 @@ namespace ControlOfPracticalClasses
         [STAThread]
         static void Main()
         {
+            SqlConnect.Connect();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormEnter());//TOODO
-            Application.Run(new MainForm("1"));//TOODO
+            Application.Run(new FormEnter());//TOODO
+            //Application.Run(new MainForm("6"));//TOODO
             //Application.Run(new FormAddGroup());//TOODO
             //Application.Run(new FormAddSubject());//TOODO
             //Application.Run(new FormDelGroup());//TOODO
@@ -31,6 +32,7 @@ namespace ControlOfPracticalClasses
 
         public static void Exit()
         {
+            SqlConnect.Disconnect();
             Process.GetCurrentProcess().Kill();
         }
     }
