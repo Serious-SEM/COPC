@@ -337,6 +337,14 @@ namespace ControlOfPracticalClasses
            return SqlConnect.Query("SELECT message_id, content, FIO, date_create FROM tcopc.message, accounts WHERE chat_id = " + IDChat + " and send_IDUser = IDUser ORDER BY message_id;");
         }
 
+        //Получение новых сообщений
+        public static DataTable GetNewMessages(string idLastMessage)
+        {
+            DataTable table = SqlConnect.Query("SELECT message_id, content, FIO, date_create FROM message, accounts WHERE chat_id = " + IDChat + " and send_IDUser = IDUser and message_id > '" + idLastMessage + "' ORDER BY message_id;");
+
+            return table;
+        }
+
         //Получение названия личной переписки
         public static string GetNameChat(string idChat)
         {

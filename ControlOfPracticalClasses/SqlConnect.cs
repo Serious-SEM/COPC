@@ -12,8 +12,8 @@ namespace ControlOfPracticalClasses
     class SqlConnect
     {
 
-        //static string serverIP = "5.3.128.53";
-        static string serverIP = "192.168.0.102";
+        static string serverIP = "5.3.132.62";
+        //static string serverIP = "192.168.0.102";
         static string userName = "remoteUser";
         static string bdName = "tcopc";
         static string port = "3306";
@@ -97,7 +97,8 @@ namespace ControlOfPracticalClasses
                 catch (Exception e)
                 {
                     //FormError error = new FormError("Не коректно заданный запрос!");
-                    FormError error = new FormError(e.Message);
+                    // FormError error = new FormError(e.Message);
+                    //MessageBox.Show(e.Message);
                 }
             }
 

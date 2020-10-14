@@ -12,6 +12,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.CompilerServices;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 namespace ControlOfPracticalClasses
 {
@@ -27,22 +29,38 @@ namespace ControlOfPracticalClasses
 
         //Панель для чатов
         TableLayoutPanel tableLayoutPanelListChats = new TableLayoutPanel();
-        //TableLayoutPanel tableLayoutPanelMessage = new TableLayoutPanel();
-        //TableLayoutPanel tableLayoutPanelMessageBottom = new TableLayoutPanel();
-        //Panel panel = new Panel();
-        //Button buttonTxt = new Button();
-        //Button buttonSend = new Button();
-        //TextBox messageRX = new TextBox();
-        //TextBox messageTX = new TextBox();
 
-        List<string> idChat = new List<string>();
+        //Класс с сохраннеными сообщениями
+        ChatsSaveOnPC chatsSaveOnPC;
+
+        //лист с таблицами сообщений
+        private List<DataTable> massagesChats;
+
+        //лист с id чатов
+        List<string> idChat;
+
+        //id последне полученного сообщения
+        private string idLastMessage;
+
+        //Дата последне полученного сообщения
+        private string dateLastMessage;
+
+        //id последне полученного чата
+        private string idLastChat;
 
         public MainForm(string idUser, string idGroup = "-1")
         {
             InitializeComponent();
+
+            //Инициализация моих компонентов
             MyInitialize();
+
+            //Делаем видемой основную форму
             this.Show();
+
+            //Приготовления при первом запуске
             First();
+
             //SqlConnect.Connect();
             SqlQuery.IDUser = idUser;
 
@@ -56,93 +74,7 @@ namespace ControlOfPracticalClasses
         #region //мои функции
 
         void MyInitialize()
-        {
-            //// 
-            //// panel
-            ////
-            //panel.Dock = DockStyle.Fill;
-            ////panel.BackColor = Color.AliceBlue;
-            //ContainerRightAndLeft.Panel1.Controls.Add(panel);
-            //panel.Controls.Add(tableLayoutPanelMessage);
-
-            ////panel.BackColor = Color.Red;           
-            //// 
-            //// tableLayoutPanelMessage
-            //// 
-            //tableLayoutPanelMessage.ColumnCount = 1;
-            //tableLayoutPanelMessage.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            //tableLayoutPanelMessage.Controls.Add(buttonTxt, 0, 0);
-            //tableLayoutPanelMessage.Controls.Add(messageRX, 0, 1);
-            //tableLayoutPanelMessage.Controls.Add(tableLayoutPanelMessageBottom, 0, 2);
-            //tableLayoutPanelMessage.Dock = DockStyle.Fill;
-            //tableLayoutPanelMessage.Location = new Point(0, 0);
-            //tableLayoutPanelMessage.Name = "tableLayoutPanelMessage";
-            //tableLayoutPanelMessage.RowCount = 3;
-            //tableLayoutPanelMessage.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
-            //tableLayoutPanelMessage.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            //tableLayoutPanelMessage.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
-            //tableLayoutPanelMessage.Size = new Size(697, 561);
-            //tableLayoutPanelMessage.TabIndex = 0;
-            //// 
-            //// buttonTxt
-            //// 
-            //buttonTxt.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            //buttonTxt.Dock = DockStyle.Fill;
-            //buttonTxt.Enabled = false;
-            //buttonTxt.FlatAppearance.BorderSize = 0;
-            //buttonTxt.FlatStyle = FlatStyle.Flat;
-            //buttonTxt.Font = new Font("Microsoft Sans Serif", 25F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(204)));
-            //buttonTxt.Location = new Point(3, 3);
-            //buttonTxt.Name = "buttonTxt";
-            //buttonTxt.Size = new Size(691, 44);
-            //buttonTxt.TabIndex = 0;
-            //buttonTxt.Text = "txt";
-            //buttonTxt.UseVisualStyleBackColor = true;
-            //// 
-            //// messageRX
-            //// 
-            //messageRX.Dock = DockStyle.Fill;
-            //messageRX.Location = new Point(3, 53);
-            //messageRX.Multiline = true;
-            //messageRX.Name = "messageRX";
-            //messageRX.Size = new Size(694, 405);
-            //messageRX.TabIndex = 1;
-            //// 
-            //// tableLayoutPanelMessageBottom
-            //// 
-            //tableLayoutPanelMessageBottom.ColumnCount = 2;
-            //tableLayoutPanelMessageBottom.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 73.24561F));
-            //tableLayoutPanelMessageBottom.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.75439F));
-            //tableLayoutPanelMessageBottom.Controls.Add(messageTX, 0, 0);
-            //tableLayoutPanelMessageBottom.Controls.Add(buttonSend, 1, 0);
-            //tableLayoutPanelMessageBottom.Dock = DockStyle.Fill;
-            //tableLayoutPanelMessageBottom.Location = new Point(3, 464);
-            //tableLayoutPanelMessageBottom.Name = "tableLayoutPanelMessageBottom";
-            //tableLayoutPanelMessageBottom.RowCount = 1;
-            //tableLayoutPanelMessageBottom.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            //tableLayoutPanelMessageBottom.Size = new Size(694, 94);
-            //tableLayoutPanelMessageBottom.TabIndex = 2;
-            //// 
-            //// messageTX
-            //// 
-            //messageTX.Dock = DockStyle.Fill;
-            //messageTX.Location = new Point(3, 3);
-            //messageTX.Multiline = true;
-            //messageTX.Name = "messageTX";
-            //messageTX.Size = new Size(502, 88);
-            //messageTX.TabIndex = 0;
-
-
-            //// 
-            //// buttonSend
-            //// 
-            //buttonSend.Dock = DockStyle.Fill;
-            //buttonSend.Location = new Point(511, 3);
-            //buttonSend.Name = "buttonSend";
-            //buttonSend.Size = new Size(180, 88);
-            //buttonSend.TabIndex = 1;
-            //buttonSend.Text = "buttonSend";
-            //buttonSend.UseVisualStyleBackColor = true;
+        {     
 
             //
             //tableLayoutPanelListChats
@@ -156,11 +88,109 @@ namespace ControlOfPracticalClasses
             tableLayoutPanelListChats.Padding = new Padding(0, 0, SystemInformation.VerticalScrollBarWidth - 8, 0);
         }
 
-        void Swap<T>(ref T a, ref T b)
+        //получение новых сообщений
+        void GetNewMessages()
         {
-            T c = a;
-            a = b;
-            b = c;
+            int timeOld = 0;//переменная для таймера 1
+
+            while (PanelMessages.Visible)
+            {                
+                int timeNew = DateTime.Now.Second;//переменная для таймера 2
+
+                if (timeNew != timeOld)
+                {
+                    timeOld = timeNew;
+
+                    DataTable tableMessages = SqlQuery.GetNewMessages(idLastMessage);
+
+                    int IForOldMessageTable;
+
+                    if (massagesChats[0].Rows.Count > 0)
+                        IForOldMessageTable = massagesChats[0].Rows.Count - 1;                    
+                        //IForOldMessageTable = massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[0].ToString();                    
+                    else
+                        IForOldMessageTable = 0;
+
+                    //Записывем все сообщения в текст бокс
+                    for (int i = 0; i < tableMessages.Rows.Count; i++)
+                    {
+                        DataRow row = massagesChats[0].NewRow();
+
+                        row.ItemArray = new object[] { 0, "", "", new DateTime()};
+
+                        for (int j = 0; j < tableMessages.Columns.Count; j++)
+                        {
+                            row.ItemArray[j] = tableMessages.Rows[i].ItemArray[j];
+                        }
+
+                        massagesChats[0].Rows.Add(row);
+
+                        IForOldMessageTable++;
+
+                        //Получаем дату текущего сообщения
+                        string activeDate = ((DateTime)tableMessages.Rows[i].ItemArray[3]).ToShortDateString();
+
+                        //Если новая дата то выводим ее
+                        if (activeDate != dateLastMessage)
+                        {
+                            dateLastMessage = activeDate;
+
+                            this.Invoke(new Action(() =>
+                            {
+                                textBoxRX.Text += "\r\n\r\n" + dateLastMessage + ":\r\n\r\n";
+                            }));
+                        }
+
+                        //имя того кто отправил сообщение
+                        string nameSendUser = MyFunction.GetNameFromFIO(tableMessages.Rows[i].ItemArray[2].ToString());
+
+                        //текст сообщения
+                        string contentMessage = tableMessages.Rows[i].ItemArray[1].ToString();
+
+                        this.Invoke(new Action(() =>
+                        {
+                            //Выводим сообщения
+                            textBoxRX.Text += nameSendUser + ": " + contentMessage + "\r\n";
+                        }));
+                        
+
+                        //Сохраняем id последнего сообщения
+                        idLastMessage = tableMessages.Rows[i].ItemArray[0].ToString();
+                    }
+                }                
+            }
+        }
+
+        void GetSaveMessage()
+        {
+            //Дата последнего сообщения
+            string lastDateMessage = "";
+
+            //Сохроняем и Записыывем первую дату сообщений 
+            if (massagesChats[0].Rows.Count > 0)
+            {
+                //lastDateMessage = ((DateTime)massagesChats[0].Rows[0].ItemArray[3]).ToShortDateString();
+                dateLastMessage = "00.00.0000";
+                textBoxRX.Text = lastDateMessage + ":\r\n\r\n";
+            }
+
+            //Записывем все сообщения в текст бокс
+            for (int i = 0; i < massagesChats[0].Rows.Count; i++)
+            {
+                //Получаем дату текущего сообщения
+                //string activeDate = ((DateTime)massagesChats[0].Rows[i].ItemArray[3]).ToShortDateString();
+                string activeDate = "00.00.0000";
+
+                //Если новая дата то выводим ее
+                if (activeDate != lastDateMessage)
+                {
+                    lastDateMessage = activeDate;
+                    textBoxRX.Text += "\r\n\r\n" + lastDateMessage + ":\r\n\r\n";
+                }
+
+                //Выводим сообщения
+                textBoxRX.Text += MyFunction.GetNameFromFIO(massagesChats[0].Rows[i].ItemArray[2].ToString()) + ": " + massagesChats[0].Rows[i].ItemArray[1].ToString() + "\r\n";
+            }
         }
 
         //Обновление данных о посещаймости
@@ -259,9 +289,40 @@ namespace ControlOfPracticalClasses
         {
             DisplayNon();
 
-            DataTable table = new DataTable();
+            //дессериализация класса ChatsSaveOnPC
+            try
+            {
+                FileStream stream = new FileStream("test.bin", FileMode.Open, FileAccess.Read);
+                BinaryFormatter binaryFormatter = new BinaryFormatter();
 
-            // table = SqlConnect.Query("select distinct SubjectName from mysubject where IDTeacher = " + IDTeacher + ";");
+                //дессериализация класса ChatsSaveOnPC
+                chatsSaveOnPC = (ChatsSaveOnPC)binaryFormatter.Deserialize(stream);
+
+                //дессериализация листа с таблицами сообщений
+                massagesChats = chatsSaveOnPC.massagesChats;
+
+                //дессериализация листа с id чатов
+                idChat = chatsSaveOnPC.idChat;
+
+                //дессериализация последне полученного сообщения
+                //idLastMessage = chatsSaveOnPC.idLastMessage;
+
+                //дессериализация последне полученного чата
+                //idLastChat = chatsSaveOnPC.idLastChat;
+
+                stream.Close();
+            }
+            catch
+            {
+                chatsSaveOnPC = new ChatsSaveOnPC(); //создание класса для сохранения данных о пересписках
+                massagesChats = new List<DataTable>();//создание листа с таблицами сообщений
+                idChat = new List<string>();//создание листа с id чатов
+                idLastMessage = "0";//создание последне полученного сообщения
+                idLastChat = "0";//создание последне полученного чата
+
+            }
+
+            //chatsSaveOnPC.ShowIdChat();
 
             //PanelMessages.Visible = true;
             //PanelMessagesChats.Visible = true;
@@ -323,7 +384,7 @@ namespace ControlOfPracticalClasses
                 btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
                 btn.Click += EnterChat;
 
-                //название чата
+                //название чата в зависимости от того беседа или нет
                 if (table.Rows[i].ItemArray[2].ToString() == "0")
                 {
                     btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
@@ -346,6 +407,13 @@ namespace ControlOfPracticalClasses
                     tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
                     tableLayoutPanelListChats.Controls.Add(btn);
                     idChat.Add(table.Rows[i].ItemArray[0].ToString());
+
+                    DataTable dataTable = new DataTable();
+                    dataTable.Columns.Add();
+                    dataTable.Columns.Add();
+                    dataTable.Columns.Add();
+                    dataTable.Columns.Add();
+                    massagesChats.Add(dataTable);
                 }
             }
 
@@ -606,94 +674,73 @@ namespace ControlOfPracticalClasses
 
         //
         #region //Панель Сообщения(список чатов) 
-
-        //Отправка сообщения
-        private void buttonSend_Click(object sender, EventArgs e)
-        {
-            //Communication.TX(textBoxMessage.Text);
-            //textBoxRX.Text += Environment.NewLine + "Я: " + textBoxMessage.Text;
-            //textBoxMessage.Text = "";
-        }
-
-        //Получение сообщения
-        private void getMessagee()
-        {
-            //while (true)
-            //{
-            //    string message;
-            //    message = Communication.RXStart();
-            //    textBoxRX.Text += Environment.NewLine + message;
-
-            //    textBoxRX.SelectionStart = textBoxRX.Text.Length-1;
-            //    textBoxRX.ScrollToCaret();
-            //}
-        }
-
-        //Вызов окна определенного чата
-        private void EnterChat(object sender, EventArgs e)
-        {
-            //buttonTxtChat.Text = tableLayoutPanelListChats.Controls[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)].Text + " " + tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender).ToString();
-
-            //Заголовок чата
-            buttonTxtChat.Text = tableLayoutPanelListChats.Controls[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)].Text;
-
-            //Установка id выбранного чата
-            SqlQuery.IDChat = idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)];
-
-            //Помещаем индекс выбранного чата на 1 место
-            string c = idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)];
-            idChat.Remove(idChat[tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender)]);
-            idChat.Insert(0, c);
-
-            //Помещаем выбранный чат на 1 место
-            tableLayoutPanelListChats.Controls.SetChildIndex((Button)sender, 0);
-
-            //Очищаем текст бокс для отправки от написанных сообщений 
-            textBoxTXMessage.Text = "";
-
-            //Очищаем текст бокс для приема от сообщений 
-            textBoxRX.Text = "";
-
-            DisplayNon();
-            PanelMessages.Visible = true;
-
-            //получение всей переписки
-            DataTable tableMessages = SqlQuery.GetFullMessageChat();
-
-            //Дата последнего сообщения
-            string lastDateMessage = "";
-
-            //Сохроняем и Записыывем первую дату сообщений 
-            if (tableMessages.Rows.Count > 0)
+       
+            //Вызов окна определенного чата
+            private void EnterChat(object sender, EventArgs e)
             {
-                lastDateMessage = ((DateTime)tableMessages.Rows[0].ItemArray[3]).ToShortDateString();
-                textBoxRX.Text = lastDateMessage + ":\r\n\r\n";
-            }
+                //индекс выбранного чата
+                int index = tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender);
 
-            //Записывем все сообщения в текст бокс
-            for (int i = 0; i < tableMessages.Rows.Count; i++)
-            {
-                //Получаем дату текущего сообщения
-                string activeDate = ((DateTime)tableMessages.Rows[i].ItemArray[3]).ToShortDateString();
+                //Заголовок чата
+                buttonTxtChat.Text = tableLayoutPanelListChats.Controls[index].Text;
 
-                //Если новая дата то выводим ее
-                if (activeDate != lastDateMessage)
+                //Установка id выбранного чата
+                SqlQuery.IDChat = idChat[index];
+
+                //Помещаем индекс выбранного чата на 1 место
+                string temp1 = idChat[index];
+                idChat.Remove(idChat[index]);
+                idChat.Insert(0, temp1);
+
+                //Помещаем выбранный чат на 1 место
+                tableLayoutPanelListChats.Controls.SetChildIndex((Button)sender, 0);
+
+                //Помещаем таблицу сообщений на 1 место
+                DataTable temp2 = massagesChats[index];
+                massagesChats.Remove(massagesChats[index]);
+                massagesChats.Insert(0, temp2);
+
+            
+                if (massagesChats[0].Rows.Count > 0)
                 {
-                    lastDateMessage = activeDate;
-                    textBoxRX.Text += "\r\n\r\n" + lastDateMessage + ":\r\n\r\n";
+                    //устанавливаем id последнего сообщения
+                    idLastMessage = massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[0].ToString();
+
+                    //устанавливаем дату последнего сообщения
+                    //dateLastMessage = ((DateTime)massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[3]).ToShortDateString();
+                    dateLastMessage = "00.00.0000";
+                }
+                else
+                {
+                    //устанавливаем id последнего сообщения
+                    idLastMessage = "0";
+
+                    //устанавливаем дату последнего сообщения
+                    dateLastMessage = "00.00.0000";
                 }
 
-                //Выводим сообщения
-                textBoxRX.Text += MyFunction.GetNameFromFIO(tableMessages.Rows[i].ItemArray[2].ToString()) + ": " + tableMessages.Rows[i].ItemArray[1].ToString() + "\r\n";
-            }            
+                //Очищаем текст бокс для отправки от написанных сообщений 
+                textBoxTXMessage.Text = "";
 
-        }
+                //Очищаем текст бокс для приема от сообщений 
+                textBoxRX.Text = "";
 
-        //вызов формы для создания чата
-        private void buttonAddChat_Click(object sender, EventArgs e)
-        {
-            FormAddChat formAddChat = new FormAddChat();
-        }
+                DisplayNon();
+                PanelMessages.Visible = true;
+
+                //вывод сохранненых сообщений
+                //GetSaveMessage();
+
+                Thread thread = new Thread(new ThreadStart(GetNewMessages));            
+                thread.Start();                       
+
+            }
+
+            //вызов формы для создания чата
+            private void buttonAddChat_Click(object sender, EventArgs e)
+            {
+                FormAddChat formAddChat = new FormAddChat();
+            }
 
         #endregion
         //
@@ -743,6 +790,17 @@ namespace ControlOfPracticalClasses
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             SqlConnect.Disconnect();
+
+            chatsSaveOnPC.PrepareSerializable(idChat, massagesChats);
+
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+
+            FileStream stream = new FileStream("test.bin", FileMode.OpenOrCreate, FileAccess.Write);
+
+            binaryFormatter.Serialize(stream, chatsSaveOnPC);
+
+            stream.Close();
+
             Program.Exit();
         }
 

@@ -28,6 +28,8 @@ namespace ControlOfPracticalClasses
             //Application.Run(new FormDelGroup());//TOODO
             //Application.Run(new FormDelSubject());//TOODO
             //Application.Run(new FormAddChat());//TOODO
+
+            
         }
 
         public static void Exit()

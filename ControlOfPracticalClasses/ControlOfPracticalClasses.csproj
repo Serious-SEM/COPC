@@ -57,6 +57,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatsSaveOnPC.cs" />
     <Compile Include="FormAddChat.cs">
       <SubType>Form</SubType>
     </Compile>
