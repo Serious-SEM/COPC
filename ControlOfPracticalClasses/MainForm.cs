@@ -19,13 +19,39 @@ namespace ControlOfPracticalClasses
 {
     public partial class MainForm : Form
     {
+        public MainForm(string idUser, string idGroup = "-1")
+        {
+            InitializeComponent();
+
+            //Инициализация моих компонентов
+            MyInitialize();
+
+            //Делаем видемой основную форму
+            this.Show();
+
+            //Приготовления при первом запуске
+            First();
+
+            //SqlConnect.Connect();
+            SqlQuery.IDUser = idUser;
+
+            if (idGroup != "-1")
+            {
+                SqlQuery.IDGroup = idGroup;
+            }
+        }
+
+
         //
-        #region //Настойки
+        #region //Настойки высоты чатов
         int CountChats = 30;//кол-во чатов
         int HeightChats = 50;//высота чата
 
-        #endregion
+        #endregion 
         //
+
+        //
+        #region //переменные для сохранения инфы
 
         //Панель для чатов
         TableLayoutPanel tableLayoutPanelListChats = new TableLayoutPanel();
@@ -48,27 +74,8 @@ namespace ControlOfPracticalClasses
         //id последне полученного чата
         private string idLastChat;
 
-        public MainForm(string idUser, string idGroup = "-1")
-        {
-            InitializeComponent();
-
-            //Инициализация моих компонентов
-            MyInitialize();
-
-            //Делаем видемой основную форму
-            this.Show();
-
-            //Приготовления при первом запуске
-            First();
-
-            //SqlConnect.Connect();
-            SqlQuery.IDUser = idUser;
-
-            if (idGroup != "-1")
-            {
-                SqlQuery.IDGroup = idGroup;
-            }
-        }
+        #endregion
+        //
 
         //
         #region //мои функции
@@ -156,6 +163,14 @@ namespace ControlOfPracticalClasses
 
                         //Сохраняем id последнего сообщения
                         idLastMessage = tableMessages.Rows[i].ItemArray[0].ToString();
+
+                        //прокрутка в конец textboxRX
+                        this.Invoke(new Action(() =>
+                        {
+                            textBoxRX.SelectionStart = textBoxRX.Text.Length;
+                            textBoxRX.ScrollToCaret();
+                        }));
+                        
                     }
                 }                
             }
@@ -335,107 +350,13 @@ namespace ControlOfPracticalClasses
 
         //
         #region //Правая панель
-
-        //Посещения
-        private void ButtonAttendance_Click(object sender, EventArgs e)
-        {
-            DisplayNon();
-
-            UpdateAttendance();
-
-            PanelAttendance.Visible = true;
-        }
-
+ 
         //Обсуждения
         private void ButtonDiscussions_Click(object sender, EventArgs e)
         {
             DisplayNon();
 
             PanelDiscussions.Visible = true;
-        }
-
-        //Сообщения
-        private void ButtonMessages_Click(object sender, EventArgs e)
-        {
-            DisplayNon();
-
-            //очищаем список чатов
-            tableLayoutPanelListChats.Controls.Clear();
-
-            //очищаем id чатов
-            idChat.Clear();
-
-            DataTable table = SqlQuery.ListChatWithMe;//получение чатов в которых я участвую
-
-            //добовление кнопок чатов 
-            for (int i = 0; i < table.Rows.Count; i++)
-            {
-                //Флаг для добавления
-                bool f = true;
-
-                //Создание кнопки для добовления
-                Button btn = new Button();
-                btn.FlatStyle = FlatStyle.Flat;
-                btn.FlatAppearance.BorderSize = 0;
-                btn.BackColor = Color.CadetBlue;
-                btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-                btn.Dock = DockStyle.Fill;
-                btn.Font = new Font("Microsoft Sans Serif", 12);
-                btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
-                btn.Click += EnterChat;
-
-                //название чата в зависимости от того беседа или нет
-                if (table.Rows[i].ItemArray[2].ToString() == "0")
-                {
-                    btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
-                }
-                else
-                {
-                    btn.Text = table.Rows[i].ItemArray[1].ToString();
-                }
-                
-
-                //Проверка на существование такого чата
-                for (int j = 0; j < tableLayoutPanelListChats.Controls.Count; j++)
-                {
-                    if (tableLayoutPanelListChats.Controls[j].Text == btn.Text) f = false;
-                }
-
-                //Добаление чата
-                if (f)
-                {
-                    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
-                    tableLayoutPanelListChats.Controls.Add(btn);
-                    idChat.Add(table.Rows[i].ItemArray[0].ToString());
-
-                    DataTable dataTable = new DataTable();
-                    dataTable.Columns.Add();
-                    dataTable.Columns.Add();
-                    dataTable.Columns.Add();
-                    dataTable.Columns.Add();
-                    massagesChats.Add(dataTable);
-                }
-            }
-
-            //for (int i = 0; i < CountChats; i++)
-            //{
-            //    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
-            //}
-            //
-
-            label1.Text = tableLayoutPanelListChats.Controls.Count.ToString();
-
-            PanelMessagesChats.Visible = true;
-        }
-
-        //Успеваймость
-        private void ButtonProgress_Click(object sender, EventArgs e)
-        {
-            DisplayNon();
-
-            UpdateProgress();
-
-            PanelProgress.Visible = true;
         }
 
         //Расписание
@@ -454,22 +375,20 @@ namespace ControlOfPracticalClasses
             PanelScienceContent.Visible = true;
         }
 
-        //Настройки
-        private void ButtonSettings_Click(object sender, EventArgs e)
-        {
-            DisplayNon();
 
-            PanelSettings.Visible = true;
-        }
+
+        #endregion
+        //
+
+        //
+        #region //Панель практика
 
         //Практика
         private void ButtonSubject_Click(object sender, EventArgs e)
         {
             DisplayNon();
 
-            DataTable table = new DataTable();
-
-            table = SqlQuery.ListSubject;
+            DataTable table = SqlQuery.ListSubject;
 
             listBoxSubject.Items.Clear();
             listBoxGroup.Items.Clear();
@@ -484,11 +403,77 @@ namespace ControlOfPracticalClasses
             PanelSubject.Visible = true;
         }
 
+        //выбор практики
+        private void SelectedSubject(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlQuery.SubjectName = listBoxSubject.SelectedItem.ToString();//сохраняем название выбранной практики
+                DataTable table = SqlQuery.ListGroup;//получаем список групп
+
+                listBoxGroup.Items.Clear();
+
+                for (int i = 0; i < table.Rows.Count; i++)
+                {
+                    listBoxGroup.Items.Add(table.Rows[i].ItemArray[1]);
+                }
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+        //выбор группы
+        private void SelectedGroup(object sender, EventArgs e)
+        { 
+            //Получаем имя выбранной группы
+            string GroupName = listBoxGroup.SelectedItem.ToString();
+
+            //сохраняем название выбранной группы
+            SqlQuery.setGroupName(GroupName);  
+        }
+
+        //Вызывает форму для добавления новой группы
+        private void buttonAddGroup_Click(object sender, EventArgs e)
+        {
+            FormAddGroup formAddGroup = new FormAddGroup();
+        }
+
+        //Вызывает форму для добавления новой практики
+        private void buttonAddSubject_Click(object sender, EventArgs e)
+        {
+            FormAddSubject formAddSubject = new FormAddSubject();
+        }
+
+        //Вызывает форму для удаления группы
+        private void buttonDeleteGroup_Click(object sender, EventArgs e)
+        {
+            FormDelGroup formDelGroup = new FormDelGroup();
+        }
+
+        //Вызывает форму для удаления практики
+        private void buttonDeleteSubject_Click(object sender, EventArgs e)
+        {
+            FormDelSubject formDelSubject = new FormDelSubject();
+        }
+
         #endregion
         //
 
         //
         #region //Кнопки панели Успеваймость
+
+        //Успеваймость
+        private void ButtonProgress_Click(object sender, EventArgs e)
+        {
+            DisplayNon();
+
+            UpdateProgress();
+
+            PanelProgress.Visible = true;
+        }
 
         //Добавить этап
         private void ButtonAddColumnProgress_Click(object sender, EventArgs e)
@@ -546,6 +531,16 @@ namespace ControlOfPracticalClasses
         //
         #region //Кнопки панели посещения 
 
+        //Посещения
+        private void ButtonAttendance_Click(object sender, EventArgs e)
+        {
+            DisplayNon();
+
+            UpdateAttendance();
+
+            PanelAttendance.Visible = true;
+        }
+
         //Сохранить изменения
         private void ButtonSaveData_Click(object sender, EventArgs e)
         {
@@ -588,153 +583,142 @@ namespace ControlOfPracticalClasses
         //
 
         //
-        #region //Панель практика
+        #region //Панель Сообщения(список чатов) 
 
-        private void SelectedSubject(object sender, EventArgs e)
-        {
-            try
+            //Сообщения
+            private void ButtonMessages_Click(object sender, EventArgs e)
             {
-                SqlQuery.SubjectName = listBoxSubject.SelectedItem.ToString();//сохраняем название выбранной практики
-                DataTable table = SqlQuery.ListGroup;//получаем список групп
+                DisplayNon();
 
-                listBoxGroup.Items.Clear();
+                //очищаем список чатов
+                tableLayoutPanelListChats.Controls.Clear();
 
+                //очищаем id чатов
+                idChat.Clear();
+
+                DataTable table = SqlQuery.ListChatWithMe;//получение чатов в которых я участвую
+
+                //добовление кнопок чатов 
                 for (int i = 0; i < table.Rows.Count; i++)
                 {
-                    listBoxGroup.Items.Add(table.Rows[i].ItemArray[1]);
+                    //Флаг для добавления
+                    bool f = true;
+
+                    //Создание кнопки для добовления
+                    Button btn = new Button();
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                    btn.BackColor = Color.CadetBlue;
+                    btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                    btn.Dock = DockStyle.Fill;
+                    btn.Font = new Font("Microsoft Sans Serif", 12);
+                    btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
+                    btn.Click += EnterChat;
+
+                    //название чата в зависимости от того беседа или нет
+                    if (table.Rows[i].ItemArray[2].ToString() == "0")
+                    {
+                        btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
+                    }
+                    else
+                    {
+                        btn.Text = table.Rows[i].ItemArray[1].ToString();
+                    }
+
+
+                    //Проверка на существование такого чата
+                    for (int j = 0; j < tableLayoutPanelListChats.Controls.Count; j++)
+                    {
+                        if (tableLayoutPanelListChats.Controls[j].Text == btn.Text) f = false;
+                    }
+
+                    //Добаление чата
+                    if (f)
+                    {
+                        tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
+                        tableLayoutPanelListChats.Controls.Add(btn);
+                        idChat.Add(table.Rows[i].ItemArray[0].ToString());
+
+                        DataTable dataTable = new DataTable();
+                        dataTable.Columns.Add("1", Type.GetType("Object"));
+                        dataTable.Columns.Add("2", Type.GetType("Object"));
+                        dataTable.Columns.Add("3", Type.GetType("Object"));
+                        dataTable.Columns.Add("4", Type.GetType("Object"));
+                        massagesChats.Add(dataTable);
+                    }
                 }
+
+                //for (int i = 0; i < CountChats; i++)
+                //{
+                //    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
+                //}
+                //
+
+                label1.Text = tableLayoutPanelListChats.Controls.Count.ToString();
+
+                PanelMessagesChats.Visible = true;
             }
-            catch (Exception)
-            {
 
-
-            }
-        }
-
-        private void SelectedGroup(object sender, EventArgs e)
-        {
-            try
-            {
-                SqlQuery.GroupName = listBoxGroup.SelectedItem.ToString();//сохраняем название выбранной группы
-                DataTable table = SqlQuery.GetIdGroup;//получаем id группы
-
-                try
-                {
-                    SqlQuery.IDGroup = table.Rows[0].ItemArray[0].ToString();
-                }
-                catch
-                {
-                    FormError error = new FormError("Не удаеться получить ID Группы!");
-                }
-
-                table = null;
-                table = SqlQuery.GetIdSubject;//получаем id практики
-
-                try
-                {
-                    SqlQuery.IDSubject = table.Rows[0].ItemArray[0].ToString();
-                }
-                catch
-                {
-                    FormError error = new FormError("Не удаеться получить ID Практики!");
-                }
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
-        //Вызывает форму для добавления новой группы
-        private void buttonAddGroup_Click(object sender, EventArgs e)
-        {
-            FormAddGroup formAddGroup = new FormAddGroup();
-        }
-
-        //Вызывает форму для добавления новой практики
-        private void buttonAddSubject_Click(object sender, EventArgs e)
-        {
-            FormAddSubject formAddSubject = new FormAddSubject();
-        }
-
-        //Вызывает форму для удаления группы
-        private void buttonDeleteGroup_Click(object sender, EventArgs e)
-        {
-            FormDelGroup formDelGroup = new FormDelGroup();
-        }
-
-        //Вызывает форму для удаления практики
-        private void buttonDeleteSubject_Click(object sender, EventArgs e)
-        {
-            FormDelSubject formDelSubject = new FormDelSubject();
-        }
-
-        #endregion
-        //
-
-        //
-        #region //Панель Сообщения(список чатов) 
-       
             //Вызов окна определенного чата
             private void EnterChat(object sender, EventArgs e)
-            {
-                //индекс выбранного чата
-                int index = tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender);
+                {
+                    //индекс выбранного чата
+                    int index = tableLayoutPanelListChats.Controls.GetChildIndex((Button)sender);
 
-                //Заголовок чата
-                buttonTxtChat.Text = tableLayoutPanelListChats.Controls[index].Text;
+                    //Заголовок чата
+                    buttonTxtChat.Text = tableLayoutPanelListChats.Controls[index].Text;
 
-                //Установка id выбранного чата
-                SqlQuery.IDChat = idChat[index];
+                    //Установка id выбранного чата
+                    SqlQuery.IDChat = idChat[index];
 
-                //Помещаем индекс выбранного чата на 1 место
-                string temp1 = idChat[index];
-                idChat.Remove(idChat[index]);
-                idChat.Insert(0, temp1);
+                    //Помещаем индекс выбранного чата на 1 место
+                    string temp1 = idChat[index];
+                    idChat.Remove(idChat[index]);
+                    idChat.Insert(0, temp1);
 
-                //Помещаем выбранный чат на 1 место
-                tableLayoutPanelListChats.Controls.SetChildIndex((Button)sender, 0);
+                    //Помещаем выбранный чат на 1 место
+                    tableLayoutPanelListChats.Controls.SetChildIndex((Button)sender, 0);
 
-                //Помещаем таблицу сообщений на 1 место
-                DataTable temp2 = massagesChats[index];
-                massagesChats.Remove(massagesChats[index]);
-                massagesChats.Insert(0, temp2);
+                    //Помещаем таблицу сообщений на 1 место
+                    DataTable temp2 = massagesChats[index];
+                    massagesChats.Remove(massagesChats[index]);
+                    massagesChats.Insert(0, temp2);
 
             
-                if (massagesChats[0].Rows.Count > 0)
-                {
-                    //устанавливаем id последнего сообщения
-                    idLastMessage = massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[0].ToString();
+                    if (massagesChats[0].Rows.Count > 0)
+                    {
+                        //устанавливаем id последнего сообщения
+                        idLastMessage = massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[0].ToString();
 
-                    //устанавливаем дату последнего сообщения
-                    //dateLastMessage = ((DateTime)massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[3]).ToShortDateString();
-                    dateLastMessage = "00.00.0000";
+                        //устанавливаем дату последнего сообщения
+                        //dateLastMessage = ((DateTime)massagesChats[0].Rows[massagesChats[0].Rows.Count - 1].ItemArray[3]).ToShortDateString();
+                        dateLastMessage = "00.00.0000";
+                    }
+                    else
+                    {
+                        //устанавливаем id последнего сообщения
+                        idLastMessage = "0";
+
+                        //устанавливаем дату последнего сообщения
+                        dateLastMessage = "00.00.0000";
+                    }
+
+                    //Очищаем текст бокс для отправки от написанных сообщений 
+                    textBoxTXMessage.Text = "";
+
+                    //Очищаем текст бокс для приема от сообщений 
+                    textBoxRX.Text = "";
+
+                    DisplayNon();
+                    PanelMessages.Visible = true;
+
+                    //вывод сохранненых сообщений
+                    //GetSaveMessage();
+
+                    Thread thread = new Thread(new ThreadStart(GetNewMessages));            
+                    thread.Start();                       
+
                 }
-                else
-                {
-                    //устанавливаем id последнего сообщения
-                    idLastMessage = "0";
-
-                    //устанавливаем дату последнего сообщения
-                    dateLastMessage = "00.00.0000";
-                }
-
-                //Очищаем текст бокс для отправки от написанных сообщений 
-                textBoxTXMessage.Text = "";
-
-                //Очищаем текст бокс для приема от сообщений 
-                textBoxRX.Text = "";
-
-                DisplayNon();
-                PanelMessages.Visible = true;
-
-                //вывод сохранненых сообщений
-                //GetSaveMessage();
-
-                Thread thread = new Thread(new ThreadStart(GetNewMessages));            
-                thread.Start();                       
-
-            }
 
             //вызов формы для создания чата
             private void buttonAddChat_Click(object sender, EventArgs e)
@@ -764,6 +748,13 @@ namespace ControlOfPracticalClasses
         //
         #region //Панель Настройки
 
+        //Настройки
+        private void ButtonSettings_Click(object sender, EventArgs e)
+        {
+            DisplayNon();
+
+            PanelSettings.Visible = true;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -777,12 +768,12 @@ namespace ControlOfPracticalClasses
         {
             DisplayNon();
             Test.Visible = true;
-        }
+        } 
 
         #endregion
         //
 
-      
+
 
         //
         //Закрытие программы

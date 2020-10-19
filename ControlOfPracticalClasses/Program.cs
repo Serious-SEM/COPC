@@ -17,7 +17,7 @@ namespace ControlOfPracticalClasses
 
         [STAThread]
         static void Main()
-        {
+       {
             SqlConnect.Connect();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

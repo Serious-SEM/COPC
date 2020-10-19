@@ -12,7 +12,7 @@ namespace ControlOfPracticalClasses
     class SqlConnect
     {
 
-        static string serverIP = "5.3.132.62";
+        static string serverIP = "5.3.128.122";
         //static string serverIP = "192.168.0.102";
         static string userName = "remoteUser";
         static string bdName = "tcopc";
@@ -47,6 +47,29 @@ namespace ControlOfPracticalClasses
         //Проверяет открыто ли соединение
         public static bool isConnect()
         {
+
+            //switch (sqlConnection.State)
+            //{
+            //    case ConnectionState.Closed:
+            //        MessageBox.Show("Закрыто");
+            //        break;
+            //    case ConnectionState.Open:
+            //        break;
+            //    case ConnectionState.Connecting:
+            //        MessageBox.Show("Подключаеться");
+            //        break;
+            //    case ConnectionState.Executing:
+            //        MessageBox.Show("Выполняет команду");
+            //        break;
+            //    case ConnectionState.Fetching:
+            //        MessageBox.Show("Извлекает данные");
+            //        break;
+            //    case ConnectionState.Broken:
+            //        MessageBox.Show("Разорвано");
+            //        break;
+            //    default:
+            //        break;
+            //}
             if (ConnectionState.Open == sqlConnection.State) return true;
             else return false;
         }
@@ -57,28 +80,6 @@ namespace ControlOfPracticalClasses
             return sqlConnection;
         }
 
-        public static DataTable Query()
-        {
-            MySqlCommand command = new MySqlCommand("SELECT * FROM students", sqlConnection);
-
-            DataTable table = new DataTable();
-
-            if (isConnect())
-            {
-                try
-                {
-                    MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                    adapter.Fill(table);
-                }
-                catch (Exception)
-                {
-                    FormError error = new FormError("Не коректно заданный запрос!");
-                }
-                
-            }
-
-            return table;
-        }
 
         //запрос с использованием своей команды
         public static DataTable Query(string str)
@@ -89,17 +90,18 @@ namespace ControlOfPracticalClasses
             {
                 MySqlCommand command = new MySqlCommand(str, sqlConnection);
 
-                try
-                {
+                //try
+                //{
                     MySqlDataAdapter adapter = new MySqlDataAdapter(command);
                     adapter.Fill(table);
-                }
-                catch (Exception e)
-                {
-                    //FormError error = new FormError("Не коректно заданный запрос!");
-                    // FormError error = new FormError(e.Message);
-                    //MessageBox.Show(e.Message);
-                }
+
+                //}
+                //catch (Exception e)
+                //{
+                //    //FormError error = new FormError("Не коректно заданный запрос!");
+                //    // FormError error = new FormError(e.Message);
+                //    MessageBox.Show(e.Message);
+                //}
             }
 
             return table;

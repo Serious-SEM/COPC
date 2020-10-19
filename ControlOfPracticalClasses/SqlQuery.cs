@@ -84,10 +84,47 @@ namespace ControlOfPracticalClasses
 
         #region//tcopc
 
-        //Получение id группы
-        public static DataTable GetIdGroup { get { return SqlConnect.Query("SELECT IDGroup FROM mygroup WHERE GroupName = '" + GroupName + "'; "); } }
-        //Получение id практики
-        public static DataTable GetIdSubject { get { return SqlConnect.Query("SELECT IDSubject FROM mysubject WHERE (SubjectName = '" + SubjectName + "')and(IDGroup = " + IDGroup + ");"); } }
+        //устанавливаем id группы
+        private static void setIdGroup()
+        {
+            DataTable table = SqlConnect.Query("SELECT IDGroup FROM mygroup WHERE GroupName = '" + GroupName + "'; ");
+
+            try
+            {
+                IDGroup = table.Rows[0].ItemArray[0].ToString();
+            }
+            catch
+            {                
+                MessageBox.Show("Не удалось установить ID Группы!");
+            }
+        }
+
+        //устанавливаем id практики
+        private static void setIdSubject()
+        {
+            DataTable table = SqlConnect.Query("SELECT IDSubject FROM mysubject WHERE (SubjectName = '" + SubjectName + "')and(IDGroup = " + IDGroup + ");");
+
+            try
+            {
+                IDSubject = table.Rows[0].ItemArray[0].ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Не удалось установить ID Практики!");
+            }
+        }
+
+        //сохраняем название выбранной группы
+        public static void setGroupName(string name)
+        {
+            GroupName = name;//сохраняем название выбранной группы
+
+            setIdGroup();//устанавливаем id группы
+
+            setIdSubject();//устанавливаем id практики
+        }
+
+
         //Получение id этапа практики
         public static DataTable GetIdStageSubject { get { return SqlConnect.Query("SELECT IDStageSubject FROM stagessubject WHERE (IDSubject = " + IDSubject + ") and (StageSubjectName = '" + StageSubjectName + "');"); } }
 
