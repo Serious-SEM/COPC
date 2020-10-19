@@ -47,29 +47,6 @@ namespace ControlOfPracticalClasses
         //Проверяет открыто ли соединение
         public static bool isConnect()
         {
-
-            //switch (sqlConnection.State)
-            //{
-            //    case ConnectionState.Closed:
-            //        MessageBox.Show("Закрыто");
-            //        break;
-            //    case ConnectionState.Open:
-            //        break;
-            //    case ConnectionState.Connecting:
-            //        MessageBox.Show("Подключаеться");
-            //        break;
-            //    case ConnectionState.Executing:
-            //        MessageBox.Show("Выполняет команду");
-            //        break;
-            //    case ConnectionState.Fetching:
-            //        MessageBox.Show("Извлекает данные");
-            //        break;
-            //    case ConnectionState.Broken:
-            //        MessageBox.Show("Разорвано");
-            //        break;
-            //    default:
-            //        break;
-            //}
             if (ConnectionState.Open == sqlConnection.State) return true;
             else return false;
         }
@@ -90,18 +67,19 @@ namespace ControlOfPracticalClasses
             {
                 MySqlCommand command = new MySqlCommand(str, sqlConnection);
 
-                //try
-                //{
+                try
+                {
                     MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-                    adapter.Fill(table);
+                    adapter.FillAsync(table);
+                    //adapter.Fill(table);
 
-                //}
-                //catch (Exception e)
-                //{
-                //    //FormError error = new FormError("Не коректно заданный запрос!");
-                //    // FormError error = new FormError(e.Message);
-                //    MessageBox.Show(e.Message);
-                //}
+                }
+                    catch (Exception e)
+                {
+                    //FormError error = new FormError("Не коректно заданный запрос!");
+                    // FormError error = new FormError(e.Message);
+                    MessageBox.Show(e.Message);
+                }
             }
 
             return table;
@@ -110,7 +88,7 @@ namespace ControlOfPracticalClasses
         //Отсоединение от БД
         public static void Disconnect()
         {
-            if(sqlConnection.Ping())
+            if(sqlConnection.State == ConnectionState.Open)
                 sqlConnection.Close();
         }
 

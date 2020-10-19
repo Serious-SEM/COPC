@@ -41,7 +41,6 @@ namespace ControlOfPracticalClasses
             }
         }
 
-
         //
         #region //Настойки высоты чатов
         int CountChats = 30;//кол-во чатов
@@ -160,18 +159,17 @@ namespace ControlOfPracticalClasses
                             textBoxRX.Text += nameSendUser + ": " + contentMessage + "\r\n";
                         }));
                         
-
                         //Сохраняем id последнего сообщения
                         idLastMessage = tableMessages.Rows[i].ItemArray[0].ToString();
-
-                        //прокрутка в конец textboxRX
-                        this.Invoke(new Action(() =>
-                        {
-                            textBoxRX.SelectionStart = textBoxRX.Text.Length;
-                            textBoxRX.ScrollToCaret();
-                        }));
-                        
+                                                                       
                     }
+
+                    //прокрутка в конец textboxRX
+                    this.Invoke(new Action(() =>
+                    {
+                        textBoxRX.SelectionStart = textBoxRX.Text.Length;
+                        textBoxRX.ScrollToCaret();
+                    }));
                 }                
             }
         }
@@ -206,6 +204,90 @@ namespace ControlOfPracticalClasses
                 //Выводим сообщения
                 textBoxRX.Text += MyFunction.GetNameFromFIO(massagesChats[0].Rows[i].ItemArray[2].ToString()) + ": " + massagesChats[0].Rows[i].ItemArray[1].ToString() + "\r\n";
             }
+        }
+
+        //Обновление списка чатов
+        public void UpdateChatsList()
+        {
+            //устонавливаем начальный id чата
+            idLastChat = "0";
+
+            //находим последний(максимальный) id чата
+            for (int i = 0; i < idChat.Count; i++)
+            {
+                if (Convert.ToInt32(idLastChat) < Convert.ToInt32(idChat[i])) idLastChat = idChat[i];
+            }
+
+            ////очищаем список чатов
+            //tableLayoutPanelListChats.Controls.Clear();
+
+            ////очищаем id чатов
+            //idChat.Clear();
+
+            //DataTable table = SqlQuery.ListChatWithMe;//получение чатов в которых я участвую
+
+            //Получаем новые чаты
+            DataTable table = SqlQuery.GetNewChats(idLastChat);
+
+            //добовление кнопок чатов 
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                //Флаг для добавления
+                bool f = true;
+
+                //Создание кнопки для добовления
+                Button btn = new Button();
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.BackColor = Color.CadetBlue;
+                btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+                btn.Dock = DockStyle.Fill;
+                btn.Font = new Font("Microsoft Sans Serif", 12);
+                btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
+                btn.Click += EnterChat;
+
+                //название чата в зависимости от того беседа или нет
+                if (table.Rows[i].ItemArray[2].ToString() == "0")
+                {
+                    btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
+                }
+                else
+                {
+                    btn.Text = table.Rows[i].ItemArray[1].ToString();
+                }
+
+
+                //Проверка на существование такого чата
+                for (int j = 0; j < tableLayoutPanelListChats.Controls.Count; j++)
+                {
+                    if (tableLayoutPanelListChats.Controls[j].Text == btn.Text) f = false;
+                }
+
+                //Добаление чата
+                if (f)
+                {
+                    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
+                    tableLayoutPanelListChats.Controls.Add(btn);
+                    tableLayoutPanelListChats.Controls.SetChildIndex(btn, 0);
+
+                    idChat.Insert(0, table.Rows[i].ItemArray[0].ToString());
+
+                    DataTable dataTable = new DataTable();
+                    dataTable.Columns.Add("1", Type.GetType("System.Int32"));
+                    dataTable.Columns.Add("2", Type.GetType("System.String"));
+                    dataTable.Columns.Add("3", Type.GetType("System.String"));
+                    dataTable.Columns.Add("4", Type.GetType("System.DateTime"));
+                    massagesChats.Insert(0, dataTable);
+                }
+            }
+
+            //for (int i = 0; i < CountChats; i++)
+            //{
+            //    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
+            //}
+            //
+
+            label1.Text = tableLayoutPanelListChats.Controls.Count.ToString();
         }
 
         //Обновление данных о посещаймости
@@ -590,71 +672,8 @@ namespace ControlOfPracticalClasses
             {
                 DisplayNon();
 
-                //очищаем список чатов
-                tableLayoutPanelListChats.Controls.Clear();
-
-                //очищаем id чатов
-                idChat.Clear();
-
-                DataTable table = SqlQuery.ListChatWithMe;//получение чатов в которых я участвую
-
-                //добовление кнопок чатов 
-                for (int i = 0; i < table.Rows.Count; i++)
-                {
-                    //Флаг для добавления
-                    bool f = true;
-
-                    //Создание кнопки для добовления
-                    Button btn = new Button();
-                    btn.FlatStyle = FlatStyle.Flat;
-                    btn.FlatAppearance.BorderSize = 0;
-                    btn.BackColor = Color.CadetBlue;
-                    btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-                    btn.Dock = DockStyle.Fill;
-                    btn.Font = new Font("Microsoft Sans Serif", 12);
-                    btn.Margin = new Padding(SystemInformation.VerticalScrollBarWidth - 8, 5, 0, 5);
-                    btn.Click += EnterChat;
-
-                    //название чата в зависимости от того беседа или нет
-                    if (table.Rows[i].ItemArray[2].ToString() == "0")
-                    {
-                        btn.Text = SqlQuery.GetNameChat(table.Rows[i].ItemArray[0].ToString());
-                    }
-                    else
-                    {
-                        btn.Text = table.Rows[i].ItemArray[1].ToString();
-                    }
-
-
-                    //Проверка на существование такого чата
-                    for (int j = 0; j < tableLayoutPanelListChats.Controls.Count; j++)
-                    {
-                        if (tableLayoutPanelListChats.Controls[j].Text == btn.Text) f = false;
-                    }
-
-                    //Добаление чата
-                    if (f)
-                    {
-                        tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
-                        tableLayoutPanelListChats.Controls.Add(btn);
-                        idChat.Add(table.Rows[i].ItemArray[0].ToString());
-
-                        DataTable dataTable = new DataTable();
-                        dataTable.Columns.Add("1", Type.GetType("Object"));
-                        dataTable.Columns.Add("2", Type.GetType("Object"));
-                        dataTable.Columns.Add("3", Type.GetType("Object"));
-                        dataTable.Columns.Add("4", Type.GetType("Object"));
-                        massagesChats.Add(dataTable);
-                    }
-                }
-
-                //for (int i = 0; i < CountChats; i++)
-                //{
-                //    tableLayoutPanelListChats.RowStyles.Add(new RowStyle(SizeType.Absolute, HeightChats));
-                //}
-                //
-
-                label1.Text = tableLayoutPanelListChats.Controls.Count.ToString();
+                //Обновление списка чатов
+                UpdateChatsList();
 
                 PanelMessagesChats.Visible = true;
             }

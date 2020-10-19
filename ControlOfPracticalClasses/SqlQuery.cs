@@ -382,6 +382,15 @@ namespace ControlOfPracticalClasses
             return table;
         }
 
+        //Получение новых чатов
+        public static DataTable GetNewChats(string idLastChat)
+        {
+            DataTable table = SqlConnect.Query("SELECT party.chat_id, chat_name, many FROM party, chat where (party.chat_id = chat.chat_id) and (party.IDUser = '" + IDUser + "') and (party.chat_id > " + idLastChat + ");");
+
+            return table;
+        }
+
+
         //Получение названия личной переписки
         public static string GetNameChat(string idChat)
         {
