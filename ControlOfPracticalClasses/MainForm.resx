@@ -160,7 +160,7 @@
     <value>0, 0</value>
   </data>
   <data name="labelSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 51</value>
+    <value>287, 51</value>
   </data>
   <data name="labelSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -208,7 +208,7 @@
     <value>0, 0</value>
   </data>
   <data name="labelGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 51</value>
+    <value>336, 51</value>
   </data>
   <data name="labelGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -244,10 +244,10 @@
     <value>1</value>
   </data>
   <data name="splitContainerSubjectAndGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 51</value>
+    <value>627, 51</value>
   </data>
   <data name="splitContainerSubjectAndGroup.SplitterDistance" type="System.Int32, mscorlib">
-    <value>290</value>
+    <value>287</value>
   </data>
   <data name="splitContainerSubjectAndGroup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -310,7 +310,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonDeleteSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 75</value>
+    <value>286, 75</value>
   </data>
   <data name="buttonDeleteSubject.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -346,7 +346,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="listBoxSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 350</value>
+    <value>286, 350</value>
   </data>
   <data name="listBoxSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -382,7 +382,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonAddSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 75</value>
+    <value>286, 75</value>
   </data>
   <data name="buttonAddSubject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -412,7 +412,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>289, 500</value>
+    <value>286, 500</value>
   </data>
   <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -466,7 +466,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonDeleteGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 75</value>
+    <value>337, 75</value>
   </data>
   <data name="buttonDeleteGroup.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -502,7 +502,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="listBoxGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 350</value>
+    <value>337, 350</value>
   </data>
   <data name="listBoxGroup.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -538,7 +538,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="buttonAddGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 75</value>
+    <value>337, 75</value>
   </data>
   <data name="buttonAddGroup.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -568,7 +568,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>340, 500</value>
+    <value>337, 500</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -601,10 +601,10 @@
     <value>1</value>
   </data>
   <data name="ContainerSubjectAndGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 500</value>
+    <value>627, 500</value>
   </data>
   <data name="ContainerSubjectAndGroup.SplitterDistance" type="System.Int32, mscorlib">
-    <value>289</value>
+    <value>286</value>
   </data>
   <data name="ContainerSubjectAndGroup.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -634,7 +634,7 @@
     <value>1</value>
   </data>
   <data name="ContainerTopAndBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="ContainerTopAndBottom.SplitterDistance" type="System.Int32, mscorlib">
     <value>51</value>
@@ -694,7 +694,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtChat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 44</value>
+    <value>621, 44</value>
   </data>
   <data name="buttonTxtChat.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -727,7 +727,7 @@
     <value>Both</value>
   </data>
   <data name="textBoxRX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 405</value>
+    <value>621, 405</value>
   </data>
   <data name="textBoxRX.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -757,7 +757,7 @@
     <value>True</value>
   </data>
   <data name="textBoxTXMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 88</value>
+    <value>448, 88</value>
   </data>
   <data name="textBoxTXMessage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -784,10 +784,10 @@
     <value>NoControl</value>
   </data>
   <data name="buttonSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 3</value>
+    <value>457, 3</value>
   </data>
   <data name="buttonSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 88</value>
+    <value>161, 88</value>
   </data>
   <data name="buttonSend.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -817,7 +817,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanelChatBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 94</value>
+    <value>621, 94</value>
   </data>
   <data name="tableLayoutPanelChatBottom.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -847,7 +847,7 @@
     <value>3</value>
   </data>
   <data name="tableLayoutPanelChats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="tableLayoutPanelChats.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -874,7 +874,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelMessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelMessages.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1468,7 +1468,7 @@
     <value>0, 0</value>
   </data>
   <data name="Test.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="Test.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1607,7 +1607,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonAddChat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>573, 9</value>
+    <value>567, 9</value>
   </data>
   <data name="buttonAddChat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 10, 3</value>
@@ -1640,7 +1640,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panelChatHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 58</value>
+    <value>627, 58</value>
   </data>
   <data name="panelChatHeader.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1682,7 +1682,7 @@
     <value>1</value>
   </data>
   <data name="splitContainerChatsHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="splitContainerChatsHeader.SplitterDistance" type="System.Int32, mscorlib">
     <value>58</value>
@@ -1709,7 +1709,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelMessagesChats.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelMessagesChats.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -1742,7 +1742,7 @@
     <value>3, 10, 3, 5</value>
   </data>
   <data name="DataAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 365</value>
+    <value>621, 365</value>
   </data>
   <data name="DataAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1781,7 +1781,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 44</value>
+    <value>621, 44</value>
   </data>
   <data name="buttonTxtAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1814,13 +1814,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonDeleteColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 0</value>
+    <value>414, 0</value>
   </data>
   <data name="ButtonDeleteColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDeleteColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonDeleteColumn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1850,13 +1850,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonAddColumn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 0</value>
+    <value>207, 0</value>
   </data>
   <data name="ButtonAddColumn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAddColumn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonAddColumn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1892,7 +1892,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSaveData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonSaveData.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1923,7 +1923,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanelAttendanceBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 94</value>
+    <value>621, 94</value>
   </data>
   <data name="tableLayoutPanelAttendanceBottom.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1980,7 +1980,7 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="tableLayoutPanelAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2007,7 +2007,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2040,7 +2040,7 @@
     <value>3, 10, 3, 5</value>
   </data>
   <data name="DataProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 365</value>
+    <value>621, 365</value>
   </data>
   <data name="DataProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2079,7 +2079,7 @@
     <value>3, 3</value>
   </data>
   <data name="buttonTxtProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 44</value>
+    <value>621, 44</value>
   </data>
   <data name="buttonTxtProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2118,7 +2118,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSaveDataProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonSaveDataProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2149,13 +2149,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>418, 0</value>
+    <value>414, 0</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDeleteColumnProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonDeleteColumnProgress.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2185,13 +2185,13 @@
     <value>NoControl</value>
   </data>
   <data name="ButtonAddColumnProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 0</value>
+    <value>207, 0</value>
   </data>
   <data name="ButtonAddColumnProgress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAddColumnProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 94</value>
+    <value>207, 94</value>
   </data>
   <data name="ButtonAddColumnProgress.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2224,7 +2224,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanelProgressBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>627, 94</value>
+    <value>621, 94</value>
   </data>
   <data name="tableLayoutPanelProgressBottom.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2281,7 +2281,7 @@
     <value>4</value>
   </data>
   <data name="tableLayoutPanelProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="tableLayoutPanelProgress.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2308,7 +2308,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelProgress.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -2335,7 +2335,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelSubject.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2422,7 +2422,7 @@
     <value>0, 0</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 381</value>
+    <value>627, 381</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2464,7 +2464,7 @@
     <value>True</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 112</value>
+    <value>353, 112</value>
   </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2488,10 +2488,10 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 3</value>
+    <value>362, 3</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 112</value>
+    <value>91, 112</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -2518,10 +2518,10 @@
     <value>NoControl</value>
   </data>
   <data name="button7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 3</value>
+    <value>459, 3</value>
   </data>
   <data name="button7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 112</value>
+    <value>165, 112</value>
   </data>
   <data name="button7.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2551,7 +2551,7 @@
     <value>1</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 118</value>
+    <value>627, 118</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2569,7 +2569,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,78,70968,Percent,21,29032,Absolute,169" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBox4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="button2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="button7" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,78,70968,Percent,21,29032,Absolute,170" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
     <value>splitContainer2.Panel2</value>
@@ -2584,7 +2584,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 503</value>
+    <value>627, 503</value>
   </data>
   <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
     <value>381</value>
@@ -2617,7 +2617,7 @@
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
     <value>54</value>
@@ -2644,7 +2644,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelSettings.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2704,7 +2704,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelSchedule.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelSchedule.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2764,7 +2764,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelDiscussions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelDiscussions.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2824,7 +2824,7 @@
     <value>0, 0</value>
   </data>
   <data name="PanelScienceContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>633, 561</value>
+    <value>627, 561</value>
   </data>
   <data name="PanelScienceContent.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -2878,7 +2878,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonAttendance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonAttendance.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2914,7 +2914,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonProgress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonProgress.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2950,7 +2950,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 65</value>
+    <value>247, 65</value>
   </data>
   <data name="ButtonSettings.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -2986,7 +2986,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSchedule.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonSchedule.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3022,7 +3022,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonScienceContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonScienceContent.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -3058,7 +3058,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonDiscussions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonDiscussions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -3094,7 +3094,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonMessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonMessages.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3130,7 +3130,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ButtonSubject.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 62</value>
+    <value>247, 62</value>
   </data>
   <data name="ButtonSubject.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3166,7 +3166,7 @@
     <value>9</value>
   </data>
   <data name="TablePanelRightButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>241, 561</value>
+    <value>247, 561</value>
   </data>
   <data name="TablePanelRightButton.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3202,7 +3202,7 @@
     <value>884, 561</value>
   </data>
   <data name="ContainerRightAndLeft.SplitterDistance" type="System.Int32, mscorlib">
-    <value>633</value>
+    <value>627</value>
   </data>
   <data name="ContainerRightAndLeft.SplitterWidth" type="System.Int32, mscorlib">
     <value>10</value>
